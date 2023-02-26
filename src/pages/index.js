@@ -66,7 +66,7 @@ export default function Home() {
         // style={{ height: '100vh' }}
       >
 
-
+<ThemeSwitch/>
  
    <MyNavBar />
       
@@ -205,7 +205,7 @@ export default function Home() {
 
         
       </footer>
-      <ThemeSwitch/>
+      
 
 
     </Container>
