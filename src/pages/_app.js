@@ -21,7 +21,7 @@ const lightTheme = createTheme({
   type: 'light',
   theme: {
     colors: {
-      background: '#fff',
+      // background: '#fff',
     }, // optional
   }
 })
