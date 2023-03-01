@@ -185,7 +185,7 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 <Spacer y={0.5}/>
 
 <p>Helapy: A Fitness & Wellness Tracking.  </p>
-<p>MamaDo: A Tracking app to keep track of baby feeding and caring routine.(Flutter)</p>
+<p>MamaDo: A Task Management app for new Mama's and Dada's of the world.(Flutter)</p>
 <p>My Portfolio/Blog Website (NextJS+Notion)</p>
 
 </Container>

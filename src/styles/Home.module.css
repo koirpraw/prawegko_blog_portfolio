@@ -1,3 +1,7 @@
+.container {
+  padding: 0 2rem;
+  margin-left: 16px;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -70,6 +74,18 @@
   font-size: 0.9rem;
   line-height: 1.5;
   max-width: 30ch;
+}
+.pageTitle{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+  text-align: center;
+}
+.title{
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .center {

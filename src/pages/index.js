@@ -43,8 +43,7 @@ export default function Home() {
   )
 
   
-    
-
+  
   return (
     
     <Container >
@@ -78,7 +77,7 @@ export default function Home() {
       <Container >
       <h5>Software developer from ☀️ Colrado.<br></br>
         I write about <Link color="primary" href="https://github.com/koirpraw"> programming  </Link> & Designing Concepts in Mobile/Web Applications.<br></br> 
-        Outside of the Computer world, I ❤️ 🪚 wood-working, 🏃🏽‍♂️running, ⚒️ DIY Projects. </h5>
+        Outside of the Computer world, I ❤️ wood🪚working, runn🏃🏽‍♂️ng, ⚒️ DIY Projects. </h5>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
         <h1> Previous Posts</h1>
@@ -160,7 +159,7 @@ export default function Home() {
       <Grid.Container gap={1} display="flex" direction="Column" justify="center" alignItems="center" alignContent="center">
       <Grid.Container gap={2} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
       <Grid>
-      <p>Made with ❤️ by Praweg Koirala </p>
+      <Text p>Made with ❤️ by Praweg Koirala </Text>
       </Grid>
       <Grid>
       <p>NewsLetter </p>

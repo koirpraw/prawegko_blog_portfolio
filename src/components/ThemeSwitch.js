@@ -57,4 +57,4 @@ const ThemeSwitch = () => {
 //     )
 // }
 
-export default  ThemeSwitch;
+export default ThemeSwitch;

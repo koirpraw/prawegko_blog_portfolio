@@ -17,22 +17,30 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 
 // 2. Call `createTheme` and pass your custom values
-const lightTheme = createTheme({
+export const lightTheme = createTheme({
   type: 'light',
   theme: {
     colors: {
-      // background: '#fff',
+      primary: '$blue',
+      background: '$white',
+      text: '#000',
+
     }, // optional
   }
 })
 
-const darkTheme = createTheme({
+export const darkTheme = createTheme({
   type: 'dark',
+  
   theme: {
     colors: {
+      background: '#1d1d1d',
+      text: '#fff',
+
       
     }, // optional
   }
+  
 })
 
 
