@@ -1,5 +1,6 @@
 import MyFooter from "@/components/Footer";
 import MyNavBar from "@/components/myNavbar";
+import ThemeSwitch from "@/components/ThemeSwitch";
 import { Card, Container, Spacer,Text } from "@nextui-org/react";
 import Link from "next/link";
 
@@ -7,6 +8,7 @@ import Link from "next/link";
 function Projects() {
   return (
     <Container as="main" display="flex" direction="column"  >
+    {/* <ThemeSwitch/> */}
     <MyNavBar/>
     <Spacer y={10}/>
     <Container  display="flex" direction="column" justify="center" alignItems="center" >

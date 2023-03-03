@@ -14,7 +14,7 @@ const ThemeSwitch = () => {
 
   return (
     <div>
-      The current theme is: {type}
+      Current Theme: {type}
       <Switch
         checked={isDark}
         onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}

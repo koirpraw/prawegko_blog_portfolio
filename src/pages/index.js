@@ -18,10 +18,12 @@ import {
   Grid,
   Card,
   Row,
+  Divider,
   
 } from '@nextui-org/react';
 import MyNavBar from '@/components/myNavbar';
 import ThemeSwitch from '@/components/ThemeSwitch';
+import MyFooter from '@/components/Footer';
 
 export default function Home() {
   
@@ -65,7 +67,7 @@ export default function Home() {
         // style={{ height: '100vh' }}
       >
 
-<ThemeSwitch/>
+{/* <ThemeSwitch/> */}
  
    <MyNavBar />
       
@@ -141,68 +143,18 @@ export default function Home() {
           >
             Show on Github
           </a> */}
-        </Row>
-        
-      
-       
-       
-        
-
-        
-         
+        </Row>   
       
         </Button>
+        <Spacer/>
       </Container>
       </main>
       
       <footer className={styles.footer}>
-      <Grid.Container gap={1} display="flex" direction="Column" justify="center" alignItems="center" alignContent="center">
-      <Grid.Container gap={2} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
-      <Grid>
-      <Text p>Made with ❤️ by Praweg Koirala </Text>
-      </Grid>
-      <Grid>
-      <p>NewsLetter </p>
-      </Grid>
-      <Grid>
-      <p>Ko-Fi </p>
-      </Grid>
-      <Grid>
-      <p>Patreon </p>
-      </Grid>
-     
-        <p></p>
-        
-        </Grid.Container>
-        <Grid.Container gap={2} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
-      <Grid>
-      <Row>
-      
-      <p> 🌐 Next.js </p>
-      </Row>
-      
-      </Grid>
-      <Grid>
-      <p>Notion </p>
-      </Grid>
-      <Grid>
-      <p>Vercel </p>
-      </Grid>
-   
-     
-        <p></p>
-        
-        </Grid.Container>
-        <Grid.Container gap={2} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
-      <Grid>
-      <p>@Copyright 2023</p>
-      </Grid>
-      </Grid.Container>
-        </Grid.Container>
-        
+ 
         
 
-        
+        <MyFooter/>
       </footer>
       
 

@@ -9,6 +9,7 @@ import {SiReact,SiFlutter,SiFirebase,SiNodedotjs,
     SiAdobeillustrator,SiVisualstudiocode,SiAndroidstudio,
      SiXcode,SiApple,SiAwsamplify,SiAmazonaws,SiGooglecloud, SiMongodb, SiMysql} from "react-icons/si";
 import ExperienceBadge from "@/components/ExperienceBadge";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 
 function AboutPage(){
@@ -16,6 +17,7 @@ function AboutPage(){
     return (
         <Container gap={2} display="flex" direction="column" >
         {/* <h2 style={{textAlign:"center"}}>About</h2> */}
+        {/* <ThemeSwitch/> */}
         
         <MyNavBar/>
         <Spacer y={2}/>
@@ -68,9 +70,7 @@ function AboutPage(){
 I am a Self-taught programmer + designer. I have been coding with Flutter for about 2 years .<br></br>
 I am currently working with React+NextJS for FrontEnd Web and Node.js/Express for the backend.<br></br>
 </p>
-<Spacer y={1}/>
-<Divider/>
-<Spacer y={1}/>
+<Spacer y={2}/>
 
 <h2 style={{textAlign:"center"}}> Tech Stack</h2>
 <Spacer y={0.5}/>
@@ -176,8 +176,6 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 </Grid.Container>
 
 </Container>
-<Spacer y={1}/>
-<Divider/>
 
 <Spacer y={2}/>
 
@@ -194,7 +192,7 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 
 <Container display="inline-grid" direction="Column"  justify="center">
 <Spacer y={1}/>
-<Divider/>
+
 <h2 style={{textAlign:"center"}}>Training & Certificates</h2>
 <Spacer y={1}/>
 <p>Flutter Bootcamp with Dart - The Complete Guide 2021<br></br>
@@ -204,8 +202,7 @@ The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
 </p>
 </Container>
 <Spacer y={2}/>
-<Divider/>
-<Spacer y={2}/>
+
 
         <MyFooter/>
 

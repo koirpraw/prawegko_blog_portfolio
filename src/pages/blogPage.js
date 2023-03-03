@@ -20,7 +20,7 @@ import ThemeSwitch from "@/components/ThemeSwitch";
         <Container>
       
         <main >
-        <ThemeSwitch/>
+        {/* <ThemeSwitch/> */}
       <MyNavBar/>
     
           <Spacer/>

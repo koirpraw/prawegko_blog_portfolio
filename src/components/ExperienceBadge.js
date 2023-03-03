@@ -6,7 +6,9 @@ const ExperienceBadge = ({ icon, title }) => {
     <Badge
     //   color="success"
       variant={"bordered"}
-      css={{ mr: '0.1rem',backgroundColor:"white",shadow:"$sm" }}>
+      css={{ mr: '0.1rem',
+      // backgroundColor:"white",
+      shadow:"$sm" }}>
         <Container  css={{display:"flex",alignItems:"center", direction:"row"}}>     
         {icon}
         <Spacer x={0.25}/>
