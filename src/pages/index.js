@@ -79,7 +79,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
       <div >
       <h5>Software developer from ☀️ Colrado.<br></br>
         I write about <Link color="primary" href="https://github.com/koirpraw"> programming  </Link> & Designing Concepts in Mobile/Web Applications.<br></br> 
-        Outside of the Computer world, I ❤️ wood🪚working, runn🏃🏽‍♂️ng, ⚒️ DIY Projects. </h5>
+        Outside of the tech/digital world, I ❤️ wood🪚working, runn🏃🏽‍♂️ng, ⚒️ DIY Projects. </h5>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
       

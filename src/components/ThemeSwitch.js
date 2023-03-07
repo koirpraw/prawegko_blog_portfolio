@@ -14,9 +14,11 @@ const ThemeSwitch = () => {
 
   return (
     <div>
-    <Grid.Container gap={1.5} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
+    <Grid.Container gap={1} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
       Current Theme: {type}&nbsp;
       <Switch
+      iconOn={<span>🌙</span>}
+      iconOff={<span>☀️</span>}
         checked={isDark}
         onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
       />
