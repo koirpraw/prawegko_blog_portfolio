@@ -12,13 +12,13 @@ export default function MyNavBar(){
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs">
-          <Navbar.Link href="/">Home</Navbar.Link>
+          <Navbar.Link href="/" activeColor={"primary"}>Home</Navbar.Link>
           <Navbar.Item>|</Navbar.Item>
-          <Navbar.Link  href="/blogPage">Blog</Navbar.Link>
+          <Navbar.Link  href="/blogPage" activeColor={"primary"}>Blog</Navbar.Link>
           <Navbar.Item>|</Navbar.Item>
-          <Navbar.Link href="/projectsPage">Projects</Navbar.Link>
+          <Navbar.Link href="/projectsPage" activeColor={"primary"}>Projects</Navbar.Link>
           <Navbar.Item>|</Navbar.Item>
-          <Navbar.Link href="/aboutPage">About</Navbar.Link>
+          <Navbar.Link href="/aboutPage" activeColor={"primary"}>About</Navbar.Link>
         </Navbar.Content>
       </Navbar>
     )

@@ -29,6 +29,7 @@ function AboutPage(){
           name="about page"
           content="profile and Intro of the author of this blog/Portfolio, Praweg koirala"
         />
+         <link rel="icon" href="/pkSite_favicon.png" />
         </Head>
 
         <ResponsiveNavBar/>

@@ -10,6 +10,14 @@ function Projects() {
   return (
     // <Container as="main" display="flex" direction="column"  >
     <div>
+    <Head>
+        <title>PK | Projects</title>
+        <meta
+          name="description"
+          content="Projects page of Praweg Koirala's personal website featuring Blog & Portfolio."
+        />
+        <link rel="icon" href="/pkSite_favicon.png" />
+      </Head>
     
     {/* <MyNavBar/> */}
     <ResponsiveNavBar/>
@@ -30,7 +38,9 @@ function Projects() {
         
         </Container>
         <Spacer y={8}/>
-        <MyFooter/>
+        
+        <footer><MyFooter/></footer>
+        
 
         {/* </Container> */}
         </div>

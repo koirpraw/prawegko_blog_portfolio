@@ -28,9 +28,9 @@ function MyFooter(){
       <Grid>
       <p>NewsLetter </p>
       </Grid>
-      <Grid>
+      {/* <Grid>
       <p>☕︎ Ko-Fi </p>
-      </Grid>
+      </Grid> */}
       <Grid>
       <p>Patreon </p>
       </Grid>
