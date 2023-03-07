@@ -4,6 +4,7 @@ import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import { Card, Container, Spacer,Text } from "@nextui-org/react";
 import Link from "next/link";
+import Head from "next/head";
 
 
 function Projects() {
@@ -38,7 +39,7 @@ function Projects() {
         
         </Container>
         <Spacer y={8}/>
-        
+
         <footer><MyFooter/></footer>
         
 
