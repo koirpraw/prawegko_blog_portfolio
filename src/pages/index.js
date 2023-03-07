@@ -36,7 +36,9 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
   )
 
   const CardContent = ({articleTitle,articleDate,artileRoute}) => (
-    <Container css={{height:"60px"}}>
+    <Container 
+    // css={{height:"60px"}}
+    >
    <Spacer/>
      <Row justify="space-between">
     <Link href={artileRoute}><Text color="primary">{articleTitle}</Text></Link>
