@@ -2,8 +2,7 @@ import MyFooter from "@/components/Footer";
 import { getAllPublished,  } from "@/lib/notion";
 import Head from "next/head";
 import { Container,Text,Link,Card, Spacer } from "@nextui-org/react";
-import MyNavBar from "@/components/myNavbar";
-import ThemeSwitch from "@/components/ThemeSwitch";
+
 import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 
 
