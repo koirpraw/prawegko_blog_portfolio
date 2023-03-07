@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import ProjectCard from '@/components/projectCard';
 import BlogPage from './blogPage';
+import { getAllPublished } from '@/lib/notion';
 // import { Navbar } from "@nextui-org/react";
 
 
@@ -24,8 +25,9 @@ import {
 import MyNavBar from '@/components/myNavbar';
 import ThemeSwitch from '@/components/ThemeSwitch';
 import MyFooter from '@/components/Footer';
+import ResponsiveNavBar from '@/components/ResponsiveNavbar';
 
-export default function Home() {
+ function Home({posts}) {
   
   const HomeText = ({text}) => (
     < h5>
@@ -35,20 +37,21 @@ export default function Home() {
   )
 
   const CardContent = ({articleTitle,articleDate,artileRoute}) => (
-    <Card.Body>
-    <Row justify="space-between">
+    <Container css={{height:"60px"}}>
+   <Spacer/>
+     <Row justify="space-between">
     <Link href={artileRoute}><Text color="primary">{articleTitle}</Text></Link>
-    <Text color="default">{articleDate}</Text>
-    
-    </Row>
-    </Card.Body>
+    <Text color="default">{articleDate}</Text> 
+    </Row>   
+    <Divider/>
+   </Container>
   )
 
   
   
   return (
     
-    <Container >
+    <div >
     <Head>
         <title>PRAWEGKO | Home</title>
         <meta
@@ -69,7 +72,8 @@ export default function Home() {
 
 {/* <ThemeSwitch/> */}
  
-   <MyNavBar />
+   {/* <MyNavBar /> */}
+   <ResponsiveNavBar/>
       
       
 
@@ -82,9 +86,9 @@ export default function Home() {
         Outside of the Computer world, I ❤️ wood🪚working, runn🏃🏽‍♂️ng, ⚒️ DIY Projects. </h5>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
-        <h1> Previous Posts</h1>
+      
       </Container>
-<Container>
+{/* <Container>
 <Card display="flex" direction="row">
         <CardContent articleTitle="Flutter: How to Create a simple Todo Application" articleDate="12/12/2021"/>
        
@@ -109,9 +113,22 @@ export default function Home() {
         
         
         </Card>
-</Container>
+</Container> */}
+
+<Container>
+<h3> Recent Posts</h3>
+          <Card display="flex" direction="row" >
+          {posts.map((post,index)=>(
+          <CardContent articleTitle={post.title} articleDate={post.date} artileRoute={`/posts/${post.slug}`}/>
+          ))}
+          <Link href="/blogPage"><Spacer x={24}/> More ..</Link> 
+          <Spacer/>
+           
+          </Card> 
+          
+          </Container>
 <Spacer y={2} />
-<h3>Top Projects</h3>
+<h3>Recent Projects</h3>
 <Grid.Container  gap={2} display="flex" direction="Column" justify="center" alignItems="center">
 <Grid.Container gap={2} display="flex" direction="Row" justify="space-between">
 
@@ -120,15 +137,10 @@ export default function Home() {
   <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="12/15/22" imageURL="https://user-images.githubusercontent.com/7278348/200156273-cf2842c1-7657-4f40-8286-d78320ffe7c3.png"/>
   <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="01/05/23"  imageURL="https://user-images.githubusercontent.com/7278348/200156273-cf2842c1-7657-4f40-8286-d78320ffe7c3.png"/>
 
+</Grid.Container>
 
 </Grid.Container>
 
-        
-
-</Grid.Container>
-        
-
-       
         <Spacer  y={2}/>
         <Button color={"gradient"}>
         <Row justify='center' align='center'>
@@ -151,19 +163,25 @@ export default function Home() {
       </main>
       
       <footer className={styles.footer}>
- 
-        
 
         <MyFooter/>
       </footer>
-      
 
+    </div>
 
-    </Container>
-    
-
-   
-   
-    
   );
 }
+
+export const getStaticProps = async()=>{
+  const data = await getAllPublished()
+      return{
+          props:{
+              posts: data
+          },
+          revalidate: 60
+      };
+  
+
+}
+
+export default Home;

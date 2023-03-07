@@ -1,4 +1,5 @@
 import MyFooter from "@/components/Footer";
+import Head from "next/head";
 import MyNavBar from "@/components/myNavbar";
 import SkillsCard from "@/components/skillsCard";
 import { Avatar, Grid,Text,Container, Spacer,Link,User, Divider } from "@nextui-org/react";
@@ -10,17 +11,29 @@ import {SiReact,SiFlutter,SiFirebase,SiNodedotjs,
      SiXcode,SiApple,SiAwsamplify,SiAmazonaws,SiGooglecloud, SiMongodb, SiMysql} from "react-icons/si";
 import ExperienceBadge from "@/components/ExperienceBadge";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 
 
 function AboutPage(){
 //    const FrontEnd = new [React,NextJS,Flutter]
     return (
-        <Container gap={2} display="flex" direction="column" >
+        // 
+        <div>
         {/* <h2 style={{textAlign:"center"}}>About</h2> */}
         {/* <ThemeSwitch/> */}
         
-        <MyNavBar/>
+        {/* <MyNavBar/> */}
+        <Head>
+        <title>PK | About</title>
+        <meta
+          name="about page"
+          content="profile and Intro of the author of this blog/Portfolio, Praweg koirala"
+        />
+        </Head>
+
+        <ResponsiveNavBar/>
         <Spacer y={2}/>
+        <main>
         <Container gap={2} display="flex" direction="column" justify="center" alignItems="center" >
         
         <Container gap={2} display="flex" direction="row" justify="center"    >
@@ -202,11 +215,14 @@ The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
 </p>
 </Container>
 <Spacer y={2}/>
+        </main>
 
 
-        <MyFooter/>
-
-        </Container>
+<footer>
+<MyFooter/>
+</footer>
+        
+        </div>
     )
     
 

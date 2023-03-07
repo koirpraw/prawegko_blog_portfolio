@@ -23,7 +23,7 @@ function MyFooter(){
     </Grid.Container>
       
       <Grid>
-      <p>Made with ❤️ by Praweg Koirala </p>
+      <p>Made with ❤️ by Praweg</p>
       </Grid>
       <Grid>
       <p>NewsLetter </p>

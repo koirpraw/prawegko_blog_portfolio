@@ -5,7 +5,7 @@ import React from 'react'
  const ProjectCard = ({projectTitle,publishedDate,imageURL}) => (
     
 
-    <Card css={{mw:"400px"}}
+    <Card css={{mw:"400px",margin:"1REM",borderRadius:"10px"}}
     isHoverable
     isPressable
     >

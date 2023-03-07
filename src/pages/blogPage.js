@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Container,Text,Link,Card, Spacer } from "@nextui-org/react";
 import MyNavBar from "@/components/myNavbar";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 
 
 
@@ -20,11 +21,12 @@ import ThemeSwitch from "@/components/ThemeSwitch";
         <Container>
       
         <main >
-        {/* <ThemeSwitch/> */}
-      <MyNavBar/>
+        
+      {/* <MyNavBar/> */}
+      <ResponsiveNavBar/>
     
           <Spacer/>
-         
+          <Container>
           {posts.map((post, index) => (
             <Container key={index}css={{width:"60%"}}  >
             
@@ -44,27 +46,20 @@ import ThemeSwitch from "@/components/ThemeSwitch";
                   <Link href={`/posts/${post.slug}`}>Read More..</Link>
                 </Card.Footer>
             </Card>
-            
-           
-            
-                 
-                  {/* <div>
-                      {post.date}
-                  </div>
-              
-              <p>
-                {post.description}
-              </p> */}
+
               <Spacer/>
             </Container>
           ))}
+          </Container>
+         
+
         </main>
         </Container>
-        <Container>
+        
         <footer >
         <MyFooter/>
         </footer>
-        </Container>
+       
       </div>
     )
   }
