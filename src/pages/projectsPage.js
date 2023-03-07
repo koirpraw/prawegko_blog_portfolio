@@ -8,7 +8,8 @@ import Link from "next/link";
 
 function Projects() {
   return (
-    <Container as="main" display="flex" direction="column"  >
+    // <Container as="main" display="flex" direction="column"  >
+    <div>
     
     {/* <MyNavBar/> */}
     <ResponsiveNavBar/>
@@ -31,8 +32,8 @@ function Projects() {
         <Spacer y={8}/>
         <MyFooter/>
 
-        </Container>
-        
+        {/* </Container> */}
+        </div>
    
 
   )
