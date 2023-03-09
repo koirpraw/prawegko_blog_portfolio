@@ -1,7 +1,7 @@
 import MyFooter from "@/components/Footer";
 import { getAllPublished,  } from "@/lib/notion";
 import Head from "next/head";
-import { Container,Text,Link,Card, Spacer } from "@nextui-org/react";
+import { Container,Text,Link,Card, Spacer,Grid } from "@nextui-org/react";
 
 import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 
@@ -33,18 +33,20 @@ import ResponsiveNavBar from "@/components/ResponsiveNavbar";
             
             <Card>
                 <Card.Header>
-                <Link href={`/posts/${post.slug}`}>
+                <Link href={`/posts/${post.slug}`}><Text css={{fontSize:"20px",color:"gray900"}}>{post.title}</Text>
                   {/* <a >{post.title}</a> */}
-                  {post.title}
+                  
                   </Link>
                 </Card.Header>
                 <Card.Divider/>
                 <Card.Body>
-                <Text color="default">{post.date}</Text>
+                <Text css={{color:"$gray600"}}>{post.date}</Text>
                 <Text color="default">{post.description} ...</Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Link href={`/posts/${post.slug}`}>Read More..</Link>
+                <Grid.Container gap={2} display="flex" direction="Row" justify="center">
+                  <Link css={{fontSize:"12px"}} href={`/posts/${post.slug}`}>Read More..</Link>
+                  </Grid.Container>
                 </Card.Footer>
             </Card>
 

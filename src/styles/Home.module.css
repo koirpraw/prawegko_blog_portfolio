@@ -1,6 +1,8 @@
 .container {
-  padding: 16 16px;
-  margin-left: 16px;
+  /* padding: 16 16px; */
+  /* margin-left: 16px; */
+  margin: 0 10% 10%;
+  
 }
 .main {
   display: flex;
@@ -87,6 +89,17 @@
   font-size: 2.5rem;
   font-weight: 400;
 }
+.blogPageTitle{
+  margin: 16px;
+  line-height: 1.15;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.backLink:hover{
+  text-decoration: underline;
+}
+
+
 
 .center {
   display: flex;

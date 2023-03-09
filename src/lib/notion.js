@@ -38,6 +38,8 @@ const notion = new Client({
     description: post.properties.Description.rich_text[0].plain_text,
     date: getToday(post.properties.Date.created_time),
     slug: post.properties.Slug.rich_text[0].plain_text,
+    readTime:post.properties.ReadTime.rich_text[0].plain_text,
+    updatedDate:post.properties.UpdatedDate.rich_text[0].plain_text,
   };
  } 
 
