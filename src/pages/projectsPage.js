@@ -1,5 +1,5 @@
+import styles from "../styles/Home.module.css";
 import MyFooter from "@/components/Footer";
-import MyNavBar from "@/components/myNavbar";
 import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import { Card, Container, Spacer,Text } from "@nextui-org/react";
