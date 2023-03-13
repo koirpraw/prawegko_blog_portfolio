@@ -10,7 +10,7 @@ import Head from "next/head";
 function Projects() {
   return (
     // <Container as="main" display="flex" direction="column"  >
-    <div>
+    <div className={styles.contentContainer}>
     <Head>
         <title>PK | Projects</title>
         <meta
@@ -40,7 +40,7 @@ function Projects() {
         </Container>
         <Spacer y={8}/>
 
-        <footer><MyFooter/></footer>
+        <footer className={styles.footerPin}><MyFooter/></footer>
         
 
         {/* </Container> */}

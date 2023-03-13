@@ -1,16 +1,16 @@
+
 import Link from "next/link";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // import { darcula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { vscDarkPlus,dracula,} from 'react-syntax-highlighter/dist/cjs/styles/prism'
-import {Spacer,Grid,Button } from "@nextui-org/react";
+import {Spacer,Grid,Button,Container } from "@nextui-org/react";
 import { getAllPublished,getSingleBlogPostBySlug } from "@/lib/notion.js";
 import styles from "@/styles/Home.module.css";
+// import styles from "@styles/blog.module.css";
 import MyFooter from "@/components/Footer";
-import MyNavBar from "@/components/myNavbar";
-import ResponsiveNavBar from "@/components/ResponsiveNavbar";
-// import { FaArrowRight } from "react-icons/fa";
+
 
 const CodeBlock = ({ language, codestring }) => {
 
@@ -28,11 +28,7 @@ const Post = ({ post }) => {
   }
   return (
     <div>
-    {/* <head>
-    <title>{post.metadata.title}</title>
-
-    </head> */}
-    <Grid.Container gap={2} justify="space-between" display="flex" direction="Column">
+    
     <Head>
     <title>{post.metadata.title}</title>
     <meta name="description" content={post.metadata.description} />
@@ -46,8 +42,11 @@ const Post = ({ post }) => {
     </Head>
   <h1 style={{textAlign:"center"}}>🌐 BLOG</h1>
     <Spacer/>
-    <Grid.Container gap={2} justify="space-evenly" display="flex" direction="Row">
-    <main>
+    
+    <main  
+    className={styles.blogContentContainer}
+    >
+    {/* <Container display="flex" direction="column" > */}
     <section className={styles.container}> 
         <h2 className={styles.blogPageTitle}>{post.metadata.title}</h2>
         
@@ -83,41 +82,24 @@ const Post = ({ post }) => {
         }}>{post.markdown}</ReactMarkdown>
        
         <Spacer y={2}/>
-        <Grid.Container 
-        gap={2}
-         display="flex" 
-         direction="Column"
-          justify="Center"> 
-           <Grid.Container 
-        gap={2}
-         display="flex" 
-         direction="Row"
-          justify="Center"> 
-        <Grid>
-        {/* <p style={{color:"gray"}}>Updated:{post.metadata.updatedDate}</p> */}
+        <Grid.Container gap={1} justify="center" display="flex" direction="Row">
+       
         <Button color={"success"} onClick={
           ()=>GoBack()
         }>Back</Button> 
-        {/* <p className={styles.backLink}>
-        <Link href={'/blogPage'}> 👈 back</Link>
-        {/* </p> */}
         
-        </Grid>
         </Grid.Container>
-       
-       
-        </Grid.Container>
-        
       </section>
+      {/* </Container> */}
     </main>
-    </Grid.Container>
+    
 
-<Grid.Container gap={2} justify="flex-end" display="flex" direction="Column">
-    <footer>
+
+    <footer className={styles.footerPin}>
       <MyFooter/>
     </footer>
-    </Grid.Container>
-    </Grid.Container>
+ 
+
 
        
     </div>

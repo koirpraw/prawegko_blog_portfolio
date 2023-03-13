@@ -46,7 +46,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
 
   
   return (
-    <div >
+    <div className={styles.contentContainer}>
     <Head>
         <title>PK | Home</title>
         <meta
@@ -61,6 +61,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
         as="main"
         display="flex"
         direction="column"
+      
         // justify="center"
         // alignItems="center"
         // style={{ height: '100vh' }}
@@ -152,7 +153,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
       </Container>
       </main>
       
-      <footer className={styles.footer}>
+      <footer className={styles.footerPin}>
 
         <MyFooter/>
       </footer>

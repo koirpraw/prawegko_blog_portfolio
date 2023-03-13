@@ -1,16 +1,14 @@
+import styles from "@/styles/Home.module.css";
 import MyFooter from "@/components/Footer";
 import Head from "next/head";
-import MyNavBar from "@/components/myNavbar";
-import SkillsCard from "@/components/skillsCard";
 import { Avatar, Grid,Text,Container, Spacer,Link,User, Divider } from "@nextui-org/react";
-// import {logo-github} from "react-icons/octicons";
 import { FaGithub,FaTwitter,FaLinkedin, FaYoutube } from "react-icons/fa";
 import {SiReact,SiFlutter,SiFirebase,SiNodedotjs,
     SiExpress,SiNextdotjs,SiHtml5,SiAdobexd,SiFigma,
     SiAdobeillustrator,SiVisualstudiocode,SiAndroidstudio,
      SiXcode,SiApple,SiAwsamplify,SiAmazonaws,SiGooglecloud, SiMongodb, SiMysql} from "react-icons/si";
 import ExperienceBadge from "@/components/ExperienceBadge";
-import ThemeSwitch from "@/components/ThemeSwitch";
+
 import ResponsiveNavBar from "@/components/ResponsiveNavbar";
 
 
@@ -18,7 +16,7 @@ function AboutPage(){
 //    const FrontEnd = new [React,NextJS,Flutter]
     return (
         // 
-        <div>
+        <div className={styles.contentContainer}>
         {/* <h2 style={{textAlign:"center"}}>About</h2> */}
         {/* <ThemeSwitch/> */}
         
@@ -219,7 +217,7 @@ The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
         </main>
 
 
-<footer>
+<footer className={styles.footerPin}>
 <MyFooter/>
 </footer>
         
