@@ -60,7 +60,7 @@ function AboutPage(){
 </Grid>
 <Grid>|</Grid>
 <Grid>
-<Link  justify="center" alignItems="center" href="https://twitter.com/koirpraw"><FaTwitter size={24} /><Spacer x={0.1}/><p>Twitter</p></Link>
+<Link  justify="center" alignItems="center" href="https://twitter.com/prawegko"><FaTwitter size={24} /><Spacer x={0.1}/><p>Twitter</p></Link>
 </Grid>
 <Grid>|</Grid>
 <Grid>
