@@ -207,11 +207,14 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 
 <h2 style={{textAlign:"center"}}>Training & Certificates</h2>
 <Spacer y={1}/>
+<div style={{textAlign:"center"}}>
 <p>Flutter Bootcamp with Dart - The Complete Guide 2021<br></br>
 Flutter & Dart - The Complete Guide [2021 Edition]- by Dr.Angela Yu, London App Brewery<br></br>
 The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
 100 Days of Code: The Complete Python Pro BootCamp for 2023(enrolled..i plan to finish by end of the year)- by Dr.Angela Yu, UDEMY
 </p>
+</div>
+
 </Container>
 <Spacer y={2}/>
         </main>
