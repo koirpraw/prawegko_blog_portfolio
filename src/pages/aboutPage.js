@@ -197,6 +197,7 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 <p>Helapy: A Fitness & Wellness Tracking.  </p>
 <p>MamaDo: A Task Management app for new Mama's and Dada's of the world.(Flutter)</p>
 <p>My Portfolio/Blog Website (NextJS+Notion)</p>
+<p>K Duo Apps,Business Portfolio Site: <a href="https://kduoapps.com/"> kduoapps.com</a></p>
 
 </Container>
 <Spacer y={2}/>
@@ -211,7 +212,10 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 <p>Flutter Bootcamp with Dart - The Complete Guide 2021<br></br>
 Flutter & Dart - The Complete Guide [2021 Edition]- by Dr.Angela Yu, London App Brewery<br></br>
 The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
-100 Days of Code: The Complete Python Pro BootCamp for 2023(enrolled..i plan to finish by end of the year)- by Dr.Angela Yu, UDEMY
+Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02- by Stephane Maarek, UDEMY(enrolled. anticipated completion summer end 2023)<br></br>
+100 Days of Code: The Complete Python Pro BootCamp for 2023- by Dr.Angela Yu, UDEMY(enrolled..i plan to finish by end of the year🤞)<br></br>
+
+
 </p>
 </div>
 
