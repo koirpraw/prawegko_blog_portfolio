@@ -78,8 +78,8 @@ function AboutPage(){
 
 <h2 style={{textAlign:"center"}}> About me:</h2>
 <Spacer y={0.5}/>
-<p> I am Praweg Koirala - A Software Developer from Colorado.
-I am a Self-taught programmer + designer. I have been coding with Flutter for about 2 years .<br></br>
+<p> I am Praweg - A Software Developer from Colorado.
+I am a Self-taught programmer. <br></br>I have been coding with Flutter for about 2 years .<br></br>
 I am currently working with React+NextJS for FrontEnd Web and Node.js/Express for the backend.<br></br>
 </p>
 <Spacer y={2}/>
@@ -182,7 +182,7 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 <ExperienceBadge title="GoogleCloud" icon={<SiGooglecloud size="18" color="orange"/>}/>
 </Grid>
 <Grid>
-<ExperienceBadge title="AWSAmplify" icon={<SiAwsamplify size="18" color="orange"/>}/>
+<ExperienceBadge title="AWS" icon={<SiAwsamplify size="18" color="orange"/>}/>
 </Grid>
 
 </Grid.Container>
@@ -213,7 +213,7 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 <p>Flutter Bootcamp with Dart - The Complete Guide 2021<br></br>
 Flutter & Dart - The Complete Guide [2021 Edition]- by Dr.Angela Yu, London App Brewery<br></br>
 The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
-Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02- by Stephane Maarek, UDEMY(enrolled. anticipated completion summer `2023)<br></br>
+Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02- by Stephane Maarek, UDEMY<br></br>
 100 Days of Code: The Complete Python Pro BootCamp for 2023- by Dr.Angela Yu, UDEMY(enrolled..i plan to finish by end of the year🤞)<br></br>
 
 

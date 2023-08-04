@@ -79,8 +79,9 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
       <Spacer y={1}/>
       <div >
       <h5>Software developer from ☀️ Colrado.<br></br>
-        I write about <Link color="primary" href="https://github.com/koirpraw"> programming  </Link> & Designing Concepts in Mobile/Web Applications.<br></br> 
-        Outside of the tech/digital world, I ❤️ wood🪚working, runn🏃🏽‍♂️ng, ⚒️ DIY Projects. </h5>
+        In my blog, i write about <Link color="primary" href="https://github.com/koirpraw"> programming  </Link> & Designing Concepts in Mobile/Web Applications.<br></br> 
+        I also try to share projects to showcase my learning related to mobile/web application development & DevOps using AWS tools.<br></br>
+        Apart of my professional interests, I ❤️ wood🪚working & runn🏃🏽‍♂️ng </h5>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
       
