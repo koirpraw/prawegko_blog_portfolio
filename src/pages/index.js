@@ -61,6 +61,8 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
         as="main"
         display="flex"
         direction="column"
+        justify='center'
+        alignItems="center"
       
         // justify="center"
         // alignItems="center"
@@ -75,47 +77,25 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
       
 
         <Spacer />
-      <h1>Hey, I'm Praweg 👋 </h1>
+    
+     <Container gap={2} display="flex" direction="row" justify="left" alignItems="center" >
+     <h2>Hey, I'm Praweg 👋 </h2>
       <Spacer y={1}/>
-      <div >
-      <h5>Software developer from ☀️ Colrado.<br></br>
-        In my blog, i write about <Link color="primary" href="https://github.com/koirpraw"> programming  </Link> & Designing Concepts in Mobile/Web Applications.<br></br> 
-        I also try to share projects to showcase my learning related to mobile/web application development & DevOps using AWS tools.<br></br>
-        Apart of my professional interests, I ❤️ wood🪚working & runn🏃🏽‍♂️ng </h5>
-        <p>****  this site is still under construction **** . please ignore the mess 😉</p>
+      <p style={{fontSize:18}}>Software developer from ☀️ Colrado.<br></br>
+        In my blog, i document my learnings regarding programming concepts in Mobile & Web Applications along with Cloud Integration, with focus in AWS Cloud.
+        Under Projects section, i try to share completed projects that i have worked on to showcase my skills. I am a self-taught programmer so i spend most of my available times on online courses, reading blogs, and watching videos to learn new skills.
+        I am also a new Dad 👶🏽, so i spend most of the other remaining time running around a toddler.<br></br>
+        If i have any spare time i love to run 🏃🏽‍♂️ or do some woodworking projects in my garage workshop. </p>
+        <Spacer y={3}/>
+        <p style={{fontStyle:'italic'}}>****  this site is still under construction **** . please ignore the mess 😉</p>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
+        </Container>
       
-      </div>
-{/* <Container>
-<Card display="flex" direction="row">
-        <CardContent articleTitle="Flutter: How to Create a simple Todo Application" articleDate="12/12/2021"/>
-       
-        <Card.Divider/>
-        <CardContent articleTitle="Flutter: Create App Theme using GetX" articleDate="12/12/2021" artileRoute={"#"}/>
-        <Card.Divider/>
-        <CardContent articleTitle="React: How to create a simple CRUD Application with Firebase Backend" articleDate="12/12/2021"/>
-        <Card.Divider/>
-        <CardContent articleTitle="Flutter: Vizualize Data like an expert using SF Charts library" articleDate="12/12/2021"/>
-        <Card.Divider/>
-        <CardContent articleTitle="Flutter: Vizualize Data like an expert using SF Charts library" articleDate="12/12/2021"/>
-        <Card.Divider/>
-        <CardContent articleTitle="Flutter: Vizualize Data like an expert using SF Charts library" articleDate="12/12/2021"/>
-        <Card.Divider/>
-        <CardContent articleTitle="Flutter: Vizualize Data like an expert using SF Charts library" articleDate="12/12/2021"/>
-        <Card.Divider/>
-        <CardContent articleTitle="Flutter: Vizualize Data like an expert using SF Charts library" articleDate="12/12/2021"/>
-        <Card.Divider/>
-        
-        
-        
-        
-        
-        </Card>
-</Container> */}
+     
 
-<div>
-<h3> Recent Posts</h3>
+<Container gap={2} display="flex" direction="row" justify="center" alignItems="center" >
+<h3>Recent Posts</h3>
           <Card display="flex" direction="row" >
           {posts.map((post,index)=>(
           <CardContent articleTitle={post.title} articleDate={post.date} artileRoute={`/posts/${post.slug}`}/>
@@ -124,10 +104,10 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
           <Spacer/>
            
           </Card> 
-          
-          </div>
+  </Container>        
+         
 <Spacer y={2} />
-<h3>Recent Projects</h3>
+<h3>Top Projects</h3>
 <Grid.Container  gap={2} display="flex" direction="Column" justify="center" alignItems="center">
 <Grid.Container gap={2} display="flex" direction="Row" justify="space-between">
 

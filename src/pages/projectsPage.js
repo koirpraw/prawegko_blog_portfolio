@@ -31,7 +31,7 @@ function Projects() {
     <Card.Divider/>
     <Card.Body>
         <h1 style={{fontSize:"60"}}>Coming Soon ...</h1>
-        <p>Until then, checkout my repo in  <Link  href="https://github.com/koirpraw">  Github </Link></p> 
+        <p>Until then, checkout my <Link  href="https://github.com/koirpraw">  Github </Link> repo.</p> 
     </Card.Body>
 
         

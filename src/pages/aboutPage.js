@@ -48,27 +48,26 @@ function AboutPage(){
         justify="center"
         css={{height:"175px",width:"175px"}}
         />
-      
-        
-        
-        
+
 </Container>
-<Spacer y={0.5}/>
+<Container gap={2} display="flex" direction="row" justify="center" alignItems="center" >
+<h5>Praweg Koirala (He/Him)</h5>
+</Container>
 <Grid.Container gap={1} display="flex" direction="row" justify="center" >
 <Grid>
-<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaGithub size={24} color="default"/><Spacer x={0.1}/><p>Github</p></Link>
+<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaGithub size={24} color="default"/><Spacer x={0.1}/></Link>
 </Grid>
 <Grid>|</Grid>
 <Grid>
-<Link  justify="center" alignItems="center" href="https://twitter.com/prawegko"><FaTwitter size={24} /><Spacer x={0.1}/><p>Twitter</p></Link>
+<Link  justify="center" alignItems="center" href="https://twitter.com/prawegko"><FaTwitter size={24} /><Spacer x={0.1}/></Link>
 </Grid>
 <Grid>|</Grid>
 <Grid>
-<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaLinkedin size={24} /><Spacer x={0.1}/><p>LinkedIn</p></Link>
+<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaLinkedin size={24} /><Spacer x={0.1}/></Link>
 </Grid>
 <Grid>|</Grid>
 <Grid>
-<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaYoutube size={24} color="red" /><Spacer x={0.1}/><p>Youtube</p></Link>
+<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaYoutube size={24} color="red" /><Spacer x={0.1}/></Link>
 </Grid>
 </Grid.Container>
 </Container>
@@ -76,34 +75,26 @@ function AboutPage(){
 
 <Spacer y={1}/>
 
-<h2 style={{textAlign:"center"}}> About me:</h2>
+<h3 style={{textAlign:"center"}}> About me:</h3>
 <Spacer y={0.5}/>
-<p> I am Praweg - A Software Developer from Colorado.
-I am a Self-taught programmer. <br></br>I have been coding with Flutter for about 2 years .<br></br>
-I am currently working with React+NextJS for FrontEnd Web and Node.js/Express for the backend.<br></br>
+<p style={{fontSize:15}}> I am Praweg - A Software Developer from Colorado.
+I am a Self-taught programmer. I have been coding with Dart(Flutter) since early 2021 .
+I have been Learning and coding with JS frameworks/libraries since mid 2022.
+I am currently working with React+NextJS, Node.js/Express, MongoDB, MySQL and AWS Cloud.<br></br>
+Prior to start coding i have worked in mobile app development with Android and iOS, mostly using low-code/no-code platforms.
+Some of these platforms include Adalo, FlutterFlow, Andromo, BuzzTouch, GameSalad, Buildbox .. to name few.
+</p>
+<p style={{fontSize:15}}>
+My Professional Career initially started working in HealthCare Industry. I worked as a Medical Technologist for approx 10 years(2010-2020).
+I picked up Mobile App development as a curious endeavor back in 2012, while working fulltime in the lab - this was a result of simply tinkering around with nocode tools along with my brother (who is also curious about things as i am).
+Later i realized my interest lied mostly in tech and Creative Fields and decided to persue a career in Tech instead and said good bye to being a Healthcare worker.And here i am now spending several hours a day going through tutorials and coding.
+Taking online courses on everything possible and still realizing how much i dont know.
 </p>
 <Spacer y={2}/>
 
-<h2 style={{textAlign:"center"}}> Tech Stack</h2>
-<Spacer y={0.5}/>
-{/* <Grid.Container gap={2} display="flex" direction="row" justify="center" >
-<Grid>
-<SkillsCard title="FrontEnd" skill="React" />
-</Grid>
-<Grid>
-<SkillsCard title="BackEnd"/>
-</Grid>
-<Grid>
-<SkillsCard title="Design"/>
-</Grid>
-<Grid>
-<SkillsCard title="Database"/>
-</Grid>
+<h3 style={{textAlign:"center"}}> My Tech Stack</h3>
 
-</Grid.Container> */}
-
-{/* <Divider/> */}
-<Spacer y={1}/>
+<Spacer y={1.5}/>
 
 <Container>
 
@@ -191,13 +182,13 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 
 <Spacer y={2}/>
 
-<h2 style={{textAlign:"center"}}> Currently working on:</h2>
+<h3 style={{textAlign:"center"}}> Currently working on:</h3>
 <Spacer y={0.5}/>
 
-<p>Helapy: A Fitness & Wellness Tracking.  </p>
+<p>Helapy: A Fitness & Wellness Tracking app. (Flutter)  </p>
 <p>MamaDo: A Task Management app for new Mama's and Dada's of the world.(Flutter)</p>
-<p>My Portfolio/Blog Website (NextJS+Notion)</p>
-<p>K Duo Apps,Business Portfolio Site: <a href="https://kduoapps.com/"> kduoapps.com</a></p>
+<p>My Portfolio/Blog Website (NextJS + Notion)</p>
+<p>K Duo Apps,Business Portfolio Site: <a href="https://kduoapps.com/"> kduoapps.com (NextJS + Notion)</a></p>
 
 </Container>
 <Spacer y={2}/>
@@ -206,7 +197,7 @@ I am currently working with React+NextJS for FrontEnd Web and Node.js/Express fo
 <Container  direction="Column"  justify="center">
 <Spacer y={1}/>
 
-<h2 style={{textAlign:"center"}}>Training & Certificates</h2>
+<h3 style={{textAlign:"center"}}>Training & Certificates</h3>
 <Spacer y={1}/>
 <div style={{textAlign:"center"}}>
 <p><a href="https://www.credly.com/badges/01e6f2e9-bc47-4fb4-bec7-0dbc6665ebc6/public_url"> AWS Certified Cloud Practitioner </a> : 2023-2026</p>
