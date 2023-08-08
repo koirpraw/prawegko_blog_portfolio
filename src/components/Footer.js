@@ -14,7 +14,7 @@ function MyFooter(){
   //  justify="center" alignItems="center" alignContent="center"
    >
  
-   <Spacer y={1}/>
+   <Spacer y={0.5}/>
   
   
     <Grid.Container gap={1.5} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
@@ -27,20 +27,20 @@ function MyFooter(){
     <Grid>
     <p>Made with ❤️ by Praweg</p>
     </Grid>
-    <Grid>
+    {/* <Grid>
     <p>NewsLetter </p>
-    </Grid>
+    </Grid> */}
     {/* <Grid>
     <p>☕︎ Ko-Fi </p>
     </Grid> */}
-    <Grid>
+    {/* <Grid>
     <p>Patreon </p>
     </Grid>
    
-      <p></p>
+      <p></p> */}
       
       </Grid.Container>
-      <Grid.Container gap={1.5} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
+      {/* <Grid.Container gap={1.5} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
     <Grid>
 
     <p> 🌐 Next.js </p>
@@ -55,7 +55,7 @@ function MyFooter(){
    
       <p></p>
       
-      </Grid.Container>
+      </Grid.Container> */}
       {/* <Grid.Container gap={1.5} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
     <Grid>
     <p>@Copyright 2023</p>

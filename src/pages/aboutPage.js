@@ -55,25 +55,26 @@ function AboutPage(){
 </Container>
 <Grid.Container gap={1} display="flex" direction="row" justify="center" >
 <Grid>
-<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaGithub size={24} color="default"/><Spacer x={0.1}/></Link>
+<a  justify="center" alignItems="center" target="_blank" rel="noopener noreferrer" href="https://github.com/koirpraw"><FaGithub size={24} color="black"/><Spacer x={0.1}/></a>
 </Grid>
 <Grid>|</Grid>
 <Grid>
-<Link  justify="center" alignItems="center" href="https://twitter.com/prawegko"><FaTwitter size={24} /><Spacer x={0.1}/></Link>
+<a  justify="center" alignItems="center" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/praweg-koirala-50700732/"><FaLinkedin size={24} /><Spacer x={0.1}/></a>
 </Grid>
 <Grid>|</Grid>
 <Grid>
-<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaLinkedin size={24} /><Spacer x={0.1}/></Link>
+<a  justify="center" alignItems="center" target="_blank" rel="noopener noreferrer" href="https://twitter.com/prawegko"><FaTwitter size={24} /><Spacer x={0.1}/></a>
 </Grid>
 <Grid>|</Grid>
+
 <Grid>
-<Link  justify="center" alignItems="center" href="https://github.com/koirpraw"><FaYoutube size={24} color="red" /><Spacer x={0.1}/></Link>
+<a  justify="center" alignItems="center" target="_blank" rel="noopener noreferrer" href="https://github.com/koirpraw"><FaYoutube size={24} color="red" /><Spacer x={0.1}/></a>
 </Grid>
 </Grid.Container>
 </Container>
 <Container gap={2} display="flex" direction="column" justify="center" alignItems="center" >
 
-<Spacer y={1}/>
+{/* <Spacer y={1}/> */}
 
 <h3 style={{textAlign:"center"}}> About me:</h3>
 <Spacer y={0.5}/>
@@ -81,9 +82,11 @@ function AboutPage(){
 I am a Self-taught programmer. I have been coding with Dart(Flutter) since early 2021 .
 I have been Learning and coding with JS frameworks/libraries since mid 2022.
 I am currently working with React+NextJS, Node.js/Express, MongoDB, MySQL and AWS Cloud.<br></br>
+<Spacer y={0.5}/>
 Prior to start coding i have worked in mobile app development with Android and iOS, mostly using low-code/no-code platforms.
 Some of these platforms include Adalo, FlutterFlow, Andromo, BuzzTouch, GameSalad, Buildbox .. to name few.
 </p>
+<Spacer y={0.5}/>
 <p style={{fontSize:15}}>
 My Professional Career initially started working in HealthCare Industry. I worked as a Medical Technologist for approx 10 years(2010-2020).
 I picked up Mobile App development as a curious endeavor back in 2012, while working fulltime in the lab - this was a result of simply tinkering around with nocode tools along with my brother (who is also curious about things as i am).
@@ -195,17 +198,34 @@ Taking online courses on everything possible and still realizing how much i dont
 
 
 <Container  direction="Column"  justify="center">
-<Spacer y={1}/>
 
-<h3 style={{textAlign:"center"}}>Training & Certificates</h3>
+<h3 style={{textAlign:"center"}}>Certificates</h3>
 <Spacer y={1}/>
 <div style={{textAlign:"center"}}>
-<p><a href="https://www.credly.com/badges/01e6f2e9-bc47-4fb4-bec7-0dbc6665ebc6/public_url"> AWS Certified Cloud Practitioner </a> : 2023-2026</p>
-<p>Flutter Bootcamp with Dart - The Complete Guide 2021<br></br>
-Flutter & Dart - The Complete Guide [2021 Edition]- by Dr.Angela Yu, London App Brewery<br></br>
-The Complete 2022 Web Development Bootcamp- by Dr.Angela Yu, UDEMY<br></br>
-Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02- by Stephane Maarek, UDEMY<br></br>
-100 Days of Code: The Complete Python Pro BootCamp for 2023- by Dr.Angela Yu, UDEMY(enrolled..i plan to finish by end of the year🤞)<br></br>
+<p><a target="_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/01e6f2e9-bc47-4fb4-bec7-0dbc6665ebc6/public_url"> AWS Certified Cloud Practitioner </a> : AWS</p>
+<a a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/certificate/UC-1aa93ce4-a072-499b-905b-9f19ab2e64c4/">The Complete 2022 Web Development Bootcamp</a> : UDEMY<br></br>
+<p><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1pGaBmpx8Nrb-4anh1Q8Slg1fYmxqOH_K/view">The Complete Flutter 2021 Bootcamp with Dart</a> : The App Brewery
+
+
+
+</p>
+</div>
+
+</Container>
+
+<Container  direction="Column"  justify="center">
+<Spacer y={0.5}/>
+
+<h3 style={{textAlign:"center"}}>Training & Courses</h3>
+<Spacer y={1}/>
+<div style={{textAlign:"center"}}>
+Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02 - by Stephane Maarek, UDEMY<br></br>
+MongoDB Associate Developer (MongoDB NodeJS Developer path) - by MongoDB University<br></br>
+The Complete 2022 Web Development Bootcamp - by Dr.Angela Yu, UDEMY<br></br>
+<p>Flutter Bootcamp with Dart ,The Complete Guide 2021 - by Dr.Angela Yu, The App Brewery<br></br>
+Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Brewery<br></br>
+Back End Development and APIs(with Node.js and MongoDB) - by FreeCodeCamp.org(in progress..)<br></br>
+100 Days of Code: The Complete Python Pro BootCamp for 2023 - by Dr.Angela Yu, UDEMY(enrolled..i plan to finish by end of the year🤞)<br></br>
 
 
 </p>
@@ -213,6 +233,24 @@ Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02- by Stephane Maarek,
 
 </Container>
 <Spacer y={2}/>
+
+<Container  direction="Column"  justify="center">
+<Spacer y={0.5}/>
+
+<h3 style={{textAlign:"center"}}>Fun Facts 😎</h3>
+<Spacer y={1}/>
+<div style={{textAlign:"center"}}>
+<p>👉 This Site is built with NextJS.</p>
+<p>👉 The Blog on this site uses Notion as a CMS/database(pretty cool huh! makes writing a breeze)</p>
+<p>👉 This site is hosted on Vercel (for free 🤑.. for now ) </p>
+<p>👉 Most of the Design on this site uses NextUI(a NextJS library) with some Bootstrap and custom CSS</p>
+
+</div>
+<Spacer y={2}/>
+
+</Container>
+
+
         </main>
 
 
