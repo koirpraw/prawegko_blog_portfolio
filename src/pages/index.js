@@ -81,7 +81,8 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
      <Container gap={2} display="flex" direction="row" justify="left" alignItems="center" >
      <h2>Hey, I'm Praweg 👋 </h2>
       <Spacer y={1}/>
-      <p style={{fontSize:18}}>Software developer from ☀️ Colrado.<br></br>
+      <p style={{fontSize:18}}>Software developer from ☀️ Colorado.<br></br>
+      <Spacer y={1}/>
         In my blog, i document my learnings regarding programming concepts in Mobile & Web Applications along with Cloud Integration, with focus in AWS Cloud.
         Under Projects section, i try to share completed projects that i have worked on to showcase my skills. I am a self-taught programmer so i spend most of my available times on online courses, reading blogs, and watching videos to learn new skills.
         I am also a new Dad 👶🏽, so i spend most of the other remaining time running around a toddler.<br></br>
@@ -118,14 +119,14 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
 
 </Grid.Container>
       <Spacer  y={1}/>
-        <Link href="https://github.com/koirpraw">
+        <a target="_blank" href="https://github.com/koirpraw" rel="noopener noreferrer">
         <Button shadow
         color={"gradient"}
         >
           <FaGithub/> &nbsp; More Projects 
-      
         </Button>
-        </Link>
+        </a>
+       
 
 </Grid.Container>
 
