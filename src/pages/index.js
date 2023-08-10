@@ -78,22 +78,46 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
 
         <Spacer />
     
-     <Container gap={2} display="flex" direction="row" justify="left" alignItems="center" >
+     <Container gap={2} display="flex" direction="column" justify="center" alignItems="left" >
+     <Container gap={2} display="flex" direction="row" justify="center" alignItems="center" >
      <Text h2
         css={{
           textGradient: "45deg, $blue600 -40%, $pink600 90%",}}
      >Hi, I' m Praweg   </Text>
      <Spacer x={1}/>
      <Text h2> 👋 </Text>
-      <Spacer y={1}/>
-      <p style={{fontSize:18}}>Software developer from ☀️ Colorado.<br></br>
-      <Spacer y={1}/>
-        In my blog, i document my learnings regarding programming concepts in Mobile & Web Applications along with Cloud Integration, with focus in AWS Cloud.
+     </Container>
+      
+         <p >Software developer from ☀️ Colorado.</p>
+      <Spacer y={0.5}/>
+   
+      <p>
+      My expertise lies in Mobile & Web Applications with a focus on seamless AWS Cloud integration.
+      Through my blog, I share insights on programming concepts and showcase completed projects that highlight my skills.
+      </p>
+      <Spacer y={0.5}/>
+      <p>
+      Teaching myself the ropes is my jam – online courses, blogs, and videos are my daily bread. 
+      I'm not just a programmer; I've embraced the chaos and joy of becoming a new Dad 👶🏽, proving that I can handle epic coding marathons and diaper emergencies with equal finesse.
+      When life gives me a breather, I'm either sprinting through scenic trails 🏃🏽‍♂️ or crafting pieces of wood into nifty creations in my garage workshop.
+      </p>
+      <Spacer y={0.5}/>
+      <p>
+      Got a challenge? Watch me dive in, because being a quick study is my superpower. New skills? Bring 'em on! Join me in exploring my portfolio and let's ride this tech rollercoaster together.
+      </p>
+      
+    
+      <p>
+      Catch you on the code side 😉
+      </p>
+
+        {/* In my blog, i document my learnings regarding programming concepts in Mobile & Web Applications along with Cloud Integration, with focus in AWS Cloud.
         Under Projects section, i try to share completed projects that i have worked on to showcase my skills. I am a self-taught programmer so i spend most of my available times on online courses, reading blogs, and watching videos to learn new skills.
         I am also a new Dad 👶🏽, so i spend most of the other remaining time running around a toddler.<br></br>
-        If i have any spare time i love to run 🏃🏽‍♂️ or do some woodworking projects in my garage workshop. </p>
-        <Spacer y={3}/>
-        <p style={{fontStyle:'italic'}}>****  this site is still under construction **** . please ignore the mess 😉</p>
+        If i have any spare time i love to run 🏃🏽‍♂️ or do some woodworking projects in my garage workshop. */}
+         
+        <Spacer y={1}/>
+        <p style={{textAlign:"center",fontStyle:'italic'}}>****  this site is still under construction **** . please ignore the unpleasentries </p>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
         </Container>

@@ -198,22 +198,10 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 
 <Spacer y={2}/>
 
-<Container direction="Column"  justify="center">
-<h3 style={{textAlign:"center"}}> Currently working on:</h3>
-<Spacer y={0.5}/>
 
-
-<div style={{textAlign:"center"}}>
-<p>Helapy: A Fitness & Wellness Tracking app. (Flutter)  </p>
-<p>MamaDo: A Task Management app for new Mama's and Dada's of the world.(Flutter)</p>
-<p>My Portfolio/Blog Website (NextJS + Notion)</p>
-<p>K Duo Apps,Business Portfolio Site: <a href="https://kduoapps.com/"> kduoapps.com (NextJS + Notion)</a></p>
-</div>
 
 </Container>
 
-</Container>
-<Spacer y={2}/>
 
 
 <Container  direction="Column"  justify="center">
@@ -225,12 +213,12 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 <a a target="_blank" rel="noopener noreferrer" href="https://www.udemy.com/certificate/UC-1aa93ce4-a072-499b-905b-9f19ab2e64c4/">The Complete 2022 Web Development Bootcamp</a> : UDEMY<br></br>
 <p><a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1pGaBmpx8Nrb-4anh1Q8Slg1fYmxqOH_K/view">The Complete Flutter 2021 Bootcamp with Dart</a> : The App Brewery
 
-
-
 </p>
 </div>
 
 </Container>
+
+<Spacer y={1}/>
 
 <Container  direction="Column"  justify="center">
 <Spacer y={0.5}/>
@@ -249,12 +237,25 @@ Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Br
 </div>
 
 </Container>
-<Spacer y={2}/>
+<Spacer y={1}/>
+<Container direction="Column"  justify="center">
+<h3 style={{textAlign:"center"}}> Currently working on:</h3>
+<Spacer y={0.5}/>
+
+
+<div style={{textAlign:"center"}}>
+<p>Helapy: A Fitness & Wellness Tracking app. (Flutter)  </p>
+<p>MamaDo: A Task Management app for new Mama's and Dada's of the world.(Flutter)</p>
+<p>My Portfolio/Blog Website (NextJS + Notion)</p>
+<p>K Duo Apps,Business Portfolio Site: <a href="https://kduoapps.com/"> kduoapps.com (NextJS + Notion)</a></p>
+</div>
+
+</Container>
 
 <Container  direction="Column"  justify="center">
 <Spacer y={0.5}/>
 
-<h3 style={{textAlign:"center"}}>Fun Facts 😎</h3>
+<h3 style={{textAlign:"center"}}>Site Facts 🧑‍💻 </h3>
 <Spacer y={1}/>
 <div style={{textAlign:"center"}}>
 <p>👉 This Site is built with NextJS & hosted on Vercel(for free 🤑.. for now )</p>
