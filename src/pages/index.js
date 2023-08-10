@@ -79,7 +79,12 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
         <Spacer />
     
      <Container gap={2} display="flex" direction="row" justify="left" alignItems="center" >
-     <h2>Hey, I'm Praweg 👋 </h2>
+     <Text h2
+        css={{
+          textGradient: "45deg, $blue600 -40%, $pink600 90%",}}
+     >Hi, I' m Praweg   </Text>
+     <Spacer x={1}/>
+     <Text h2> 👋 </Text>
       <Spacer y={1}/>
       <p style={{fontSize:18}}>Software developer from ☀️ Colorado.<br></br>
       <Spacer y={1}/>

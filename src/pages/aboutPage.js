@@ -224,6 +224,7 @@ MongoDB Associate Developer (MongoDB NodeJS Developer path) - by MongoDB Univers
 The Complete 2022 Web Development Bootcamp - by Dr.Angela Yu, UDEMY<br></br>
 <p>Flutter Bootcamp with Dart ,The Complete Guide 2021 - by Dr.Angela Yu, The App Brewery<br></br>
 Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Brewery<br></br>
+React State Management- Intemediate Javascript Course- by Jack Herrington, FreeCodeCamp - Youtube.<br></br>
 Back End Development and APIs(with Node.js and MongoDB) - by FreeCodeCamp.org(in progress..)<br></br>
 100 Days of Code: The Complete Python Pro BootCamp for 2023 - by Dr.Angela Yu, UDEMY(enrolled..i plan to finish by end of the year🤞)<br></br>
 
@@ -240,9 +241,8 @@ Back End Development and APIs(with Node.js and MongoDB) - by FreeCodeCamp.org(in
 <h3 style={{textAlign:"center"}}>Fun Facts 😎</h3>
 <Spacer y={1}/>
 <div style={{textAlign:"center"}}>
-<p>👉 This Site is built with NextJS.</p>
+<p>👉 This Site is built with NextJS & hosted on Vercel(for free 🤑.. for now )</p>
 <p>👉 The Blog on this site uses Notion as a CMS/database(pretty cool huh! makes writing a breeze)</p>
-<p>👉 This site is hosted on Vercel (for free 🤑.. for now ) </p>
 <p>👉 Most of the Design on this site uses NextUI(a NextJS library) with some Bootstrap and custom CSS</p>
 
 </div>
