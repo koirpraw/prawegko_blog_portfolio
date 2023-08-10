@@ -26,8 +26,8 @@ export default function ResponsiveNavBar() {
         <Navbar.Item>|</Navbar.Item>
         <Navbar.Link href="/blogPage">Blog</Navbar.Link>
         <Navbar.Item>|</Navbar.Item>
-        {/* <Navbar.Link href="/projectsPage">Projects</Navbar.Link>
-        <Navbar.Item>|</Navbar.Item> */}
+        <Navbar.Link href="/projectsPage">Projects</Navbar.Link>
+        <Navbar.Item>|</Navbar.Item>
         <Navbar.Link href="aboutPage">About</Navbar.Link>
         
         {/* <Navbar.Item><ThemeSwitch/></Navbar.Item> */}
