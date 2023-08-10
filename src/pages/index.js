@@ -87,8 +87,8 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
      <Spacer x={1}/>
      <Text h2> 👋 </Text>
      </Container>
-      
-         <p >Software developer from ☀️ Colorado.</p>
+     <p >A software geek soaking up the Colorado sunshine ☀️</p>
+         {/* <p >Software developer from ☀️ Colorado.</p> */}
       <Spacer y={0.5}/>
    
       <p>
