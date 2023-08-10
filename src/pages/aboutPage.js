@@ -72,27 +72,40 @@ function AboutPage(){
 </Grid>
 </Grid.Container>
 </Container>
-<Container gap={2} display="flex" direction="column" justify="center" alignItems="center" >
+<Container gap={2} display="flex" direction="column" justify="center" alignItems="left" >
 
 {/* <Spacer y={1}/> */}
 
 <h3 style={{textAlign:"center"}}> About me:</h3>
 <Spacer y={0.5}/>
-<p style={{fontSize:15}}> I am Praweg - A Software Developer from Colorado.
-I am a Self-taught programmer. I have been coding with Dart(Flutter) since early 2021 .
-I have been Learning and coding with JS frameworks/libraries since mid 2022.
-I am currently working with React+NextJS, Node.js/Express, MongoDB, MySQL and AWS Cloud.<br></br>
+
+<p>I'm Praweg, a Software Developer based in the beautiful state of Colorado.
+I'm proud to say I'm a self-taught programmer who thrives on constant learning and growth.
+</p> 
 <Spacer y={0.5}/>
-Prior to start coding i have worked in mobile app development with Android and iOS, mostly using low-code/no-code platforms.
-Some of these platforms include Adalo, FlutterFlow, Andromo, BuzzTouch, GameSalad, Buildbox .. to name few.
+<p>I've been immersed in the world of Dart and Flutter since early 2021, crafting mobile applications for Android and iOS.
+ Around mid-2022, I ventured into the realm of JavaScript frameworks and libraries,
+ and I've been passionately working with the likes of React, NextJS, Node.js, Express, MongoDB, MySQL,
+and the expansive realm of AWS Cloud.</p>
+  <Spacer y={0.5}/>
+<p>
+Before my coding escapades, I was knee-deep in mobile app development,
+juggling Android and iOS, primarily leveraging the prowess of low-code and no-code platforms.
+The roster includes Adalo, FlutterFlow, Andromo, BuzzTouch, GameSalad, Buildbox, among others.
 </p>
 <Spacer y={0.5}/>
-<p style={{fontSize:15}}>
-My Professional Career initially started working in HealthCare Industry. I worked as a Medical Technologist for approx 10 years(2010-2020).
-I picked up Mobile App development as a curious endeavor back in 2012, while working fulltime in the lab - this was a result of simply tinkering around with nocode tools along with my brother (who is also curious about things as i am).
-Later i realized my interest lied mostly in tech and Creative Fields and decided to persue a career in Tech instead and said good bye to being a Healthcare worker.And here i am now spending several hours a day going through tutorials and coding.
-Taking online courses on everything possible and still realizing how much i dont know.
+<p>My journey kicked off in the Healthcare Industry, where I spent roughly a decade as a dedicated Medical Technologist (2010-2020).
+Alongside my lab work, a spark of curiosity led me into the world of mobile app development back in 2012.
+This journey of tinkering with no-code tools, often side by side with my equally inquisitive brother, planted the seeds of a tech-driven passion within me.</p>
+<Spacer y={0.5}/>
+<p>
+As time went on, it became clear that my heart was firmly rooted in the realm of technology and creative expression. Making the leap from healthcare to tech was a defining moment, and I've never looked back. Now, I'm in my element – dedicating countless hours to tutorials, coding challenges, and online courses. The more I learn, the more I uncover the vastness of what I have yet to explore.
 </p>
+<Spacer y={0.5}/>
+<p style={{textAlign:"center"}}>Join me on this exhilarating journey of continuous learning and innovation!</p>
+
+
+
 <Spacer y={2}/>
 
 <h3 style={{textAlign:"center"}}> My Tech Stack</h3>
@@ -185,13 +198,19 @@ Taking online courses on everything possible and still realizing how much i dont
 
 <Spacer y={2}/>
 
+<Container direction="Column"  justify="center">
 <h3 style={{textAlign:"center"}}> Currently working on:</h3>
 <Spacer y={0.5}/>
 
+
+<div style={{textAlign:"center"}}>
 <p>Helapy: A Fitness & Wellness Tracking app. (Flutter)  </p>
 <p>MamaDo: A Task Management app for new Mama's and Dada's of the world.(Flutter)</p>
 <p>My Portfolio/Blog Website (NextJS + Notion)</p>
 <p>K Duo Apps,Business Portfolio Site: <a href="https://kduoapps.com/"> kduoapps.com (NextJS + Notion)</a></p>
+</div>
+
+</Container>
 
 </Container>
 <Spacer y={2}/>
@@ -221,14 +240,11 @@ Taking online courses on everything possible and still realizing how much i dont
 <div style={{textAlign:"center"}}>
 Ultimate AWS Certified Developer Associate 2023 NEW DVA-C02 - by Stephane Maarek, UDEMY<br></br>
 MongoDB Associate Developer (MongoDB NodeJS Developer path) - by MongoDB University<br></br>
+Back End Development and APIs(with Node.js and MongoDB) - by FreeCodeCamp.org<br></br>
 The Complete 2022 Web Development Bootcamp - by Dr.Angela Yu, UDEMY<br></br>
 <p>Flutter Bootcamp with Dart ,The Complete Guide 2021 - by Dr.Angela Yu, The App Brewery<br></br>
 Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Brewery<br></br>
-React State Management- Intemediate Javascript Course- by Jack Herrington, FreeCodeCamp - Youtube.<br></br>
-Back End Development and APIs(with Node.js and MongoDB) - by FreeCodeCamp.org(in progress..)<br></br>
-100 Days of Code: The Complete Python Pro BootCamp for 2023 - by Dr.Angela Yu, UDEMY(enrolled..i plan to finish by end of the year🤞)<br></br>
-
-
+100 Days of Code: The Complete Python Pro BootCamp for 2023 - by Dr.Angela Yu, UDEMY(in Progress..i plan to finish by end of this year🤞)<br></br>
 </p>
 </div>
 
@@ -278,3 +294,20 @@ circle
 
 
  /></Grid> */}
+
+
+ {/* <p style={{fontSize:15}}> I am Praweg - A Software Developer from Colorado.
+I am a Self-taught programmer. I have been coding with Dart(Flutter) since early 2021 .
+I have been Learning and coding with JS frameworks/libraries since mid 2022.
+I am currently working with React+NextJS, Node.js/Express, MongoDB, MySQL and AWS Cloud.<br></br>
+<Spacer y={0.5}/>
+Prior to start coding i have worked in mobile app development with Android and iOS, mostly using low-code/no-code platforms.
+Some of these platforms include Adalo, FlutterFlow, Andromo, BuzzTouch, GameSalad, Buildbox .. to name few.
+</p>
+<Spacer y={0.5}/>
+<p style={{fontSize:15}}>
+My Professional Career initially started working in HealthCare Industry. I worked as a Medical Technologist for approx 10 years(2010-2020).
+I picked up Mobile App development as a curious endeavor back in 2012, while working fulltime in the lab - this was a result of simply tinkering around with nocode tools along with my brother (who is also curious about things as i am).
+Later i realized my interest lied mostly in tech and Creative Fields and decided to persue a career in Tech instead and said good bye to being a Healthcare worker.And here i am now spending several hours a day going through tutorials and coding.
+Taking online courses on everything possible and still realizing how much i dont know.
+</p> */}
