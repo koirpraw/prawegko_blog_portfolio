@@ -87,29 +87,39 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
      <Spacer x={1}/>
      <Text h2> 👋 </Text>
      </Container>
-     <p >A software geek soaking up the Colorado sunshine ☀️</p>
+     <p >a software developer based in Colorado ☀️</p>
          {/* <p >Software developer from ☀️ Colorado.</p> */}
       <Spacer y={0.5}/>
    
       <p>
       My expertise lies in Mobile & Web Applications with a focus on seamless AWS Cloud integration.
       Through my blog, I share insights on programming concepts and showcase completed projects that highlight my skills.
+      My journey involves relentless self-learning, fueled by online courses, blogs, and videos.
+      Amidst this, I've recently embraced the joys of parenthood 👶🏽, mastering the delicate balance between code and family.
       </p>
       <Spacer y={0.5}/>
-      <p>
-      Teaching myself the ropes is my jam – online courses, blogs, and videos are my daily bread. 
+      {/* <p> */}
+     
+      {/* Teaching myself the ropes is my jam – online courses, blogs, and videos are my daily bread. 
       I'm not just a programmer; I've embraced the chaos and joy of becoming a new Dad 👶🏽, proving that I can handle epic coding marathons and diaper emergencies with equal finesse.
-      When life gives me a breather, I'm either sprinting through scenic trails 🏃🏽‍♂️ or crafting pieces of wood into nifty creations in my garage workshop.
+      When life gives me a breather, I'm either sprinting through scenic trails 🏃🏽‍♂️ or crafting pieces of wood into nifty creations in my garage workshop. */}
+      {/* </p> */}
+      <p>
+      When time permits, I'm either sprinting on the trails 🏃🏽‍♂️ or channeling my creativity through woodworking projects.
       </p>
       <Spacer y={0.5}/>
       <p>
-      Got a challenge? Watch me dive in, because being a quick study is my superpower. New skills? Bring 'em on! Join me in exploring my portfolio and let's ride this tech rollercoaster together.
+      I welcome you to explore my portfolio and be part of my technological voyage.
+      {/* Got a challenge? Watch me dive in, because being a quick study is my superpower. New skills? Bring 'em on! Join me in exploring my portfolio and let's ride this tech rollercoaster together. */}
       </p>
+
+      
+
+
+
+
       
     
-      <p>
-      Catch you on the code side 😉
-      </p>
 
         {/* In my blog, i document my learnings regarding programming concepts in Mobile & Web Applications along with Cloud Integration, with focus in AWS Cloud.
         Under Projects section, i try to share completed projects that i have worked on to showcase my skills. I am a self-taught programmer so i spend most of my available times on online courses, reading blogs, and watching videos to learn new skills.
