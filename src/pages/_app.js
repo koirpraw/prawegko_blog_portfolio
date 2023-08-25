@@ -14,6 +14,7 @@ import '../styles/globals.css';
 
 import { createTheme, NextUIProvider,NextThemeProvider } from "@nextui-org/react"
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/react';
 
 
 // 2. Call `createTheme` and pass your custom values
@@ -57,6 +58,7 @@ function MyApp({ Component, pageProps }) {
   >
     <NextUIProvider>
       <Component {...pageProps} />
+      <Analytics/>
     </NextUIProvider>
      </NextThemesProvider>
   );
