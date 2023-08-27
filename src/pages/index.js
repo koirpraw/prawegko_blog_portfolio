@@ -118,7 +118,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
         If i have any spare time i love to run 🏃🏽‍♂️ or do some woodworking projects in my garage workshop. */}
          
         <Spacer y={1}/>
-        <p style={{textAlign:"center",fontStyle:'italic'}}>****  this site is still under construction **** . please ignore the unpleasentries </p>
+        <p style={{textAlign:"center",fontStyle:'italic'}}>****  this site is still under construction **** . please ignore the mess. </p>
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
         </Container>
