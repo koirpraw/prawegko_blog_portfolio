@@ -128,7 +128,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
 <Container gap={2} display="flex" direction="row" justify="center" alignItems="center" >
 <h3>Recent Posts</h3>
           <Card display="flex" direction="row" >
-          {posts.map((post,index)=>(
+          {posts.slice(0,8).map((post,index)=>(
           <CardContent articleTitle={post.title} articleDate={post.date} artileRoute={`/posts/${post.slug}`}/>
           ))}
           <Link href="/blogPage"><Spacer x={24}/> More ..</Link> 

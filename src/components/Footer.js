@@ -6,7 +6,7 @@ import ThemeSwitch from './ThemeSwitch';
 function MyFooter(){
     return(
       
-      <div>
+      <div >
 
       <Divider css={{width:"100%"}}/>
       
