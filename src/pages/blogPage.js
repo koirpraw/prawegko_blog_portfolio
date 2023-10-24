@@ -123,7 +123,7 @@ const handleSearch = (query)=>{
           ))}
           </div> */}
           <div>
-          <SearchBar onSearch={handleSearch}/>
+          {/* <SearchBar onSearch={handleSearch}/> */}
           <Spacer/>
       {currentPosts.map((post, index) => (
         <div key={index} css={{ width: "60%" }}>

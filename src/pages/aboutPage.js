@@ -10,6 +10,7 @@ import {SiReact,SiFlutter,SiFirebase,SiNodedotjs,
 import ExperienceBadge from "@/components/ExperienceBadge";
 
 import ResponsiveNavBar from "@/components/ResponsiveNavbar";
+import { DownloadResume } from "@/components/downloadResume";
 
 
 function AboutPage(){
@@ -106,7 +107,7 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 
 
 
-<Spacer y={2}/>
+<Spacer y={1}/>
 
 <h3 style={{textAlign:"center"}}> My Tech Stack</h3>
 
@@ -236,6 +237,16 @@ Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Br
 </p>
 </div>
 
+{/* <Spacer y={1}/>
+
+<Grid.Container gap={1} display="flex" direction="row" justify="center" >
+<Grid>
+<DownloadResume/>
+</Grid>
+</Grid.Container> */}
+
+
+
 </Container>
 <Spacer y={1}/>
 <Container direction="Column"  justify="center">
@@ -251,6 +262,8 @@ Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Br
 </div>
 
 </Container>
+
+
 
 <Container  direction="Column"  justify="center">
 <Spacer y={0.5}/>

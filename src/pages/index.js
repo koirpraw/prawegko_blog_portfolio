@@ -152,6 +152,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
         <a target="_blank" href="https://github.com/koirpraw" rel="noopener noreferrer">
         <Button shadow
         color={"gradient"}
+       
         >
           <FaGithub/> &nbsp; More Projects 
         </Button>
