@@ -3,10 +3,11 @@ import MyFooter from "@/components/Footer";
 import Head from "next/head";
 import { Avatar, Grid,Text,Container, Spacer,Link,User, Divider } from "@nextui-org/react";
 import { FaGithub,FaTwitter,FaLinkedin, FaYoutube } from "react-icons/fa";
-import {SiReact,SiFlutter,SiFirebase,SiNodedotjs,
-    SiExpress,SiNextdotjs,SiHtml5,SiAdobexd,SiFigma,
+import {SiReact,SiFlutter,SiNodedotjs,
+    SiNextdotjs,SiHtml5,SiAdobexd,SiFigma,
     SiAdobeillustrator,SiVisualstudiocode,SiAndroidstudio,
-     SiXcode,SiApple,SiAwsamplify,SiAmazonaws,SiGooglecloud, SiMongodb, SiMysql} from "react-icons/si";
+     SiXcode,SiApple,SiAmazonaws,SiGooglecloud,SiGithub,
+      SiMongodb, SiMysql,SiAndroid, SiGithubactions, SiVercel, SiJavascript, SiCss3, SiExpress, SiDart} from "react-icons/si";
 import ExperienceBadge from "@/components/ExperienceBadge";
 
 import ResponsiveNavBar from "@/components/ResponsiveNavbar";
@@ -117,13 +118,13 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 
 <Grid.Container gap={1} display="flex" direction="row" justify="center" >
 <Grid>
-<ExperienceBadge title="Android" icon={<SiFlutter size="18" color="lightBlue"/>}/>
+<ExperienceBadge title="Web" icon={<SiReact size="18" color="blue"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="Android" icon={<SiAndroid size="18" color="green"/>}/>
 </Grid>
 <Grid>
 <ExperienceBadge title="iOS" icon={<SiApple size="18" color="black"/>}/>
-</Grid>
-<Grid>
-<ExperienceBadge title="Web" icon={<SiReact size="18" color="blue"/>}/>
 </Grid>
 </Grid.Container>
 
@@ -132,10 +133,25 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 <ExperienceBadge title="AndroidStudio" icon={<SiAndroidstudio size="18" color="green"/>}/>
 </Grid>
 <Grid>
-<ExperienceBadge title="VS Code" icon={<SiVisualstudiocode size="18" color="skyblue"/>}/>
+<ExperienceBadge title="VS Code" icon={<SiVisualstudiocode size="18" color="blue"/>}/>
 </Grid>
 <Grid>
-<ExperienceBadge title="XCODE" icon={<SiXcode size="18" color="lightblue"/>}/>
+<ExperienceBadge title="XCODE" icon={<SiXcode size="18" color="blue"/>}/>
+</Grid>
+</Grid.Container>
+
+<Grid.Container gap={1} display="flex" direction="row" justify="center" >
+<Grid>
+<ExperienceBadge title="Dart" icon={<SiDart size="18" color="blue"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="JavaScript/TypeScript" icon={<SiJavascript size="18" color="red"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="Html" icon={<SiHtml5 size="18" color="red"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="CSS" icon={<SiCss3 size="18" color="red"/>}/>
 </Grid>
 </Grid.Container>
 
@@ -144,32 +160,16 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 <ExperienceBadge title="Flutter" icon={<SiFlutter size="18" color="lightBlue"/>}/>
 </Grid>
 <Grid>
-<ExperienceBadge title="React" icon={<SiReact size="18" color="blue"/>}/>
+<ExperienceBadge title="React" icon={<SiReact size="18" color="red"/>}/>
 </Grid>
 <Grid>
 <ExperienceBadge title="NextJS" icon={<SiNextdotjs size="18" color="black"/>}/>
-</Grid>
-<Grid>
-<ExperienceBadge title="Html5" icon={<SiHtml5 size="18" color="red"/>}/>
 </Grid>
 <Grid>
 <ExperienceBadge title="NodeJS" icon={<SiNodedotjs size="18" color="green"/>}/>
 </Grid>
 <Grid>
 <ExperienceBadge title="Express" icon={<SiExpress size="18" color="black"/>}/>
-</Grid>
-</Grid.Container>
-
-
-<Grid.Container gap={1} display="flex" direction="row" justify="center" >
-<Grid>
-<ExperienceBadge title="AdobeXD" icon={<SiAdobexd size="18" color="purple"/>}/>
-</Grid>
-<Grid>
-<ExperienceBadge title="Figma" icon={<SiFigma size="18" color="blue"/>}/>
-</Grid>
-<Grid>
-<ExperienceBadge title="AdobeIllustrator" icon={<SiAdobeillustrator size="18" color="Orange"/>}/>
 </Grid>
 </Grid.Container>
 
@@ -184,15 +184,38 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 
 <Grid.Container gap={1} display="flex" direction="row" justify="center" >
 <Grid>
-<ExperienceBadge title="Firebase" icon={<SiFirebase size="18" color="orange"/>}/>
+<ExperienceBadge title="Vercel" icon={<SiVercel size="18" color="black"/>}/>
 </Grid>
 <Grid>
 <ExperienceBadge title="GoogleCloud" icon={<SiGooglecloud size="18" color="orange"/>}/>
 </Grid>
 <Grid>
-<ExperienceBadge title="AWS" icon={<SiAwsamplify size="18" color="orange"/>}/>
+<ExperienceBadge title="AWS" icon={<SiAmazonaws size="18" color="orange"/>}/>
 </Grid>
 
+</Grid.Container>
+
+<Grid.Container gap={1} display="flex" direction="row" justify="center" >
+
+<Grid>
+<ExperienceBadge title="Github-CoPilot" icon={<SiGithub size="18" color="black"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="Prompt Engineering" icon={<SiGithubactions size="18" color="black"/>}/>
+</Grid>
+
+</Grid.Container>
+
+<Grid.Container gap={1} display="flex" direction="row" justify="center" >
+<Grid>
+<ExperienceBadge title="AdobeXD" icon={<SiAdobexd size="18" color="purple"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="Figma" icon={<SiFigma size="18" color="blue"/>}/>
+</Grid>
+<Grid>
+<ExperienceBadge title="AdobeIllustrator" icon={<SiAdobeillustrator size="18" color="Orange"/>}/>
+</Grid>
 </Grid.Container>
 
 </Container>
