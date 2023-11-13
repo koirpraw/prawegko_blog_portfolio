@@ -40,7 +40,7 @@ function Projects() {
         </Container>
         <Spacer y={8}/>
 
-        <footer className={styles.footerPin}><MyFooter/></footer>
+        <footer ><MyFooter/></footer>
         
 
         {/* </Container> */}

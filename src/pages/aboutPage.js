@@ -110,6 +110,12 @@ As time went on, it became clear that my heart was firmly rooted in the realm of
 
 <Spacer y={1}/>
 
+<Grid.Container gap={1} display="flex" direction="row" justify="center" >
+<Grid>
+<DownloadResume/>
+</Grid>
+</Grid.Container>
+
 <h3 style={{textAlign:"center"}}> My Tech Stack</h3>
 
 <Spacer y={1.5}/>
@@ -260,14 +266,7 @@ Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Br
 </p>
 </div>
 
-{/* <Spacer y={1}/>
-
-<Grid.Container gap={1} display="flex" direction="row" justify="center" >
-<Grid>
-<DownloadResume/>
-</Grid>
-</Grid.Container> */}
-
+<Spacer y={1}/>
 
 
 </Container>

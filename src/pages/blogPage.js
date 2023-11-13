@@ -174,7 +174,7 @@ const handleSearch = (query)=>{
         {/* </main> */}
         </Container>
         
-        <footer >
+        <footer  >
         <MyFooter/>
         </footer>
        

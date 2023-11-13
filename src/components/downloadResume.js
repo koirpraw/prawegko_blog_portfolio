@@ -7,7 +7,8 @@ import { Button } from "@nextui-org/react";
 export const DownloadResume = () => {
 
   const handleDownload = ()=>{
-    const fileUrl = "https://pk-web-assets.s3.amazonaws.com/pk_resumeSample2.png";
+    // const fileUrl = "https://pk-web-assets.s3.amazonaws.com/pk_resumeSample2.png";
+    const fileUrl = "https://pk-web-assets.s3.amazonaws.com/PrawegResume_current.pdf"
     const fileName = "pk_resumeSample2.png";
     saveAs(fileUrl, fileName);
   }
