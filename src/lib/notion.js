@@ -24,6 +24,7 @@ const notion = new Client({
     return getPageMetaData(post);
   });
  };
+ 
  const getPageMetaData = (post) => {
   const getTags = (tags) => {
     const allTags = tags.map((tag) => {

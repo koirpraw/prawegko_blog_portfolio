@@ -28,8 +28,9 @@
   min-height: calc(100vh - 40px);
 }
 .footerPin{
-  position: relative;
-  max-height: 10%;
+  /* position: relative; */
+  max-height: calc(10vh);
+  height: calc(100vh - 40px);
 
   bottom: 0;
   left:0;

@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+// import Link from "next/link";
 import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";

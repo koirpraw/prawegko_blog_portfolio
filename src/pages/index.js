@@ -118,7 +118,7 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
         If i have any spare time i love to run 🏃🏽‍♂️ or do some woodworking projects in my garage workshop. */}
          
         <Spacer y={1}/>
-        <p style={{textAlign:"center",fontStyle:'italic'}}>****  this site is still under construction **** . please ignore the mess. </p>
+
         {/* <Image src="/next.svg" alt="Vercel Logo" width={200} height={200} /> */}
         <Spacer y={2} />
         </Container>
@@ -142,10 +142,14 @@ import ResponsiveNavBar from '@/components/ResponsiveNavbar';
 <Grid.Container  gap={2} display="flex" direction="Column" justify="center" alignItems="center">
 <Grid.Container gap={2} display="flex" direction="Row" justify="space-between">
 
- <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="12/02/22"  imageURL="https://nextui.org/images/card-example-2.jpeg"/>
+ {/* <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="12/02/22"  imageURL="https://nextui.org/images/card-example-2.jpeg"/> */}
+ {/* <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="12/02/22"  imageURL="https://nextui.org/images/card-example-2.jpeg"/>
 
-  <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="12/15/22" imageURL="https://user-images.githubusercontent.com/7278348/200156273-cf2842c1-7657-4f40-8286-d78320ffe7c3.png"/>
-  <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="01/05/23"  imageURL="https://user-images.githubusercontent.com/7278348/200156273-cf2842c1-7657-4f40-8286-d78320ffe7c3.png"/>
+  <ProjectCard projectTitle="Flutter: How to Create a simple Todo Application" publishedDate="12/15/22" imageURL="https://pk-web-assets.s3.amazonaws.com/responsiveNavbar-nextjs-web.png"/>
+  <ProjectCard projectTitle="NextJS:Responsive Navbar" publishedDate="01/05/23"  imageURL="https://pk-web-assets.s3.amazonaws.com/responsiveNavbar-nextjs-mobile.png" projectLink=""/> */}
+  {posts.slice(0,3).map((project,index)=>(
+          <ProjectCard projectTitle={project.title} publishedDate={project.date} imageURL="https://nextui.org/images/card-example-2.jpeg" projectLink={`/posts/${project.slug}`}/>
+          ))}
 
 </Grid.Container>
       <Spacer  y={1}/>
