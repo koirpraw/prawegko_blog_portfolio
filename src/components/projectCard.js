@@ -1,45 +1,32 @@
-import {Card,Col,Link} from '@nextui-org/react'
+
 import React from 'react'
+import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './ui/card';
 
 
- const ProjectCard = ({projectTitle,publishedDate,imageURL,projectLink}) => (
-    
+const ProjectCard = ({ projectTitle, projectDescription, publishedDate, imageURL, projectLink }) => (
 
-    <Card css={{mw:"400px",margin:"1REM",borderRadius:"10px"}}
-    isHoverable
-    isPressable
-    
-    >
-  {/* <Card.Header>
-  
-  </Card.Header> */}
-  
- 
-    {/* <Card.Body> */}
-    <Card.Image
-                src={imageURL}
-                objectFit="contain"
-                width="100%"
-                height={340}
-                
-              />
-              
-    {/* </Card.Body> */}
-    <Card.Footer>
-    <Col css={{textAlign:"center"}}>
-    <Link href={{projectLink}}><h5>{projectTitle}</h5></Link>
-    {/* <p>{projectDescription}</p> */}
-    <p style={{color:"gray"}}>published: {publishedDate}</p>
-    </Col>
-   
-    </Card.Footer>
-    
+
+  <Card className="hover:shadow-xl">
+    <CardHeader>
+      <div>
+        <img src={imageURL} />
+      </div>
+      <CardTitle><p className='text-xl font-medium text-slate-600 text-center'>{projectTitle}</p></CardTitle>
+      <CardDescription>{projectDescription}</CardDescription>
+    </CardHeader>
+    <CardContent>
+
+
+    </CardContent>
+    <CardFooter>{publishedDate}</CardFooter>
+
+
   </Card>
-  )
 
-  export default ProjectCard;
+)
+
+export default ProjectCard;
 
 
 
 
-  
