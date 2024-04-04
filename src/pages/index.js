@@ -48,7 +48,7 @@ function Home({ posts, image }) {
               alt="Praweg Koirala"
               // width={300}
               // height={300}
-              className="w-[300px] h-[300px] grayscale backdrop-blur-sm shadow-2xl shadow-slate-300 rounded-3xl hover:contrast-125 hover:grayscale-0 hover:rotate-3 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40"
+              className="w-[300px] h-[320px] grayscale backdrop-blur-sm shadow-2xl shadow-slate-300 rounded-3xl hover:contrast-125 hover:grayscale-0 hover:rotate-3 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40"
             />
           </div>
 

@@ -8,7 +8,7 @@ function NewFooter() {
                 <FooterNavLinks />
                 <p className=" text-gray-400 font-light ">
                     Made with ❤️ by{" "}
-                    <a className="hover:text-blue-400 hover:font-bold" href="https://www.prawegko.dev" target="_blank">
+                    <a className=" text-gray-400 hover:text-blue-400 hover:font-bold" href="https://www.prawegko.dev" target="_blank">
                         Praweg
                     </a>
                 </p>
