@@ -8,7 +8,7 @@ function AboutPage() {
     var sonAge = currentYear - 2022;
     var usDuration = currentYear - 2006;
     return (
-        <div className='flex flex-col justify-center items-center space-y-8 px-24'>
+        <div className='flex flex-col justify-center items-center space-y-8 px-12'>
             <div >
                 <h3 className="text-3xl font-light ">Welcome to My Digital WorkShop. I am so Glad to Virtually meet you.</h3>
             </div>

@@ -18,7 +18,7 @@ export default function FullNavbar() {
   return (
     <nav className="fixed mx-auto z-10 top-0 left-0 right-0 bg-white backdrop-blur-md bg-opacity-50 w-full ">
       {/* <div className="flex justify-between items-center space-x-4 p-4"> */}
-      <div className="flex container flex-wrap items-center justify-evenly mx-auto px-4 py-6 ">
+      <div className="flex container flex-wrap items-center justify-center mx-auto px-4 py-6 ">
         <div className=" space-x-4">
           <Link href="/">
             <p className="text-xl lg:text-3xl text-slate-600 font-light  hover:text-blue-500 ">P | K</p>
