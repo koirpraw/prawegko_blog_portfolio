@@ -4,8 +4,8 @@ const titles = ["Blog", "Projects", "Skills", "About"];
 
 export default function FooterNavLinks() {
   return (
-    <div className="w-[30%]">
-      <div className="flex flex-row justify-between items-center ">
+    <div className="w-1/2">
+      <div className="flex flex-row justify-center items-center space-x-8 sm:space-x-12 ">
         {titles &&
           titles.map((title) => (
             <Link

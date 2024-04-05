@@ -1,9 +1,8 @@
-import { CreateTheme,NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider as NextThemeProvider } from "next-themes";
+
 
 
 import { useTheme as useNextTheme } from 'next-themes'
-import { Switch, useTheme,Grid, Container } from '@nextui-org/react'
+import { Switch, useTheme, Grid, Container } from '@nextui-org/react'
 
 
 
@@ -14,15 +13,15 @@ const ThemeSwitch = () => {
 
   return (
     <div>
-    <Grid.Container gap={1} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
-      Current Theme: {type}&nbsp;
-      <Switch
-      iconOn={<span>🌙</span>}
-      iconOff={<span>☀️</span>}
-        checked={isDark}
-        onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-      />
-    </Grid.Container>
+      <Grid.Container gap={1} display="flex" direction="Row" justify="center" alignItems="center" alignContent="center">
+        Current Theme: {type}&nbsp;
+        <Switch
+          iconOn={<span>🌙</span>}
+          iconOff={<span>☀️</span>}
+          checked={isDark}
+          onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+        />
+      </Grid.Container>
     </div>
   )
 }

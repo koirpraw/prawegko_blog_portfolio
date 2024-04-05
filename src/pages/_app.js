@@ -1,33 +1,39 @@
-// import '@/styles/globals.css'
-// import * as React from 'react'
-// import { NextUIProvider } from '@nextui-org/react'
+import '@/styles/globals.css'
 
 
-// export default function App({ Component, pageProps }) {
-//   return 
-//     <NextUIProvider>
-//   <Component {...pageProps} />
-//     </NextUIProvider>
-// }
-import '../styles/globals.css';
 
-
-// import { Roboto } from 'next/font/google';
 import { createTheme, NextUIProvider, NextThemeProvider } from "@nextui-org/react"
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { Analytics } from '@vercel/analytics/react';
-import RootLayout from '../components/RootLayout';
+// import RootLayout from '../components/RootLayout';
 import FullNavbar from '@/components/FullNavbar';
 import NewFooter from '@/components/NewFooter';
-// import { Inter } from 'next/font/google'
+import { Poppins, Work_Sans } from '@next/font/google';
+import RootLayout from '@/components/layout';
 
-// const roboto = Roboto({
-//   weight: '400',
+// import localFont from '@next/font/local'
+
+
+// const calSans = localFont({
+//   display: 'swap',
 //   subsets: ['latin'],
+//   src: '../../public/fonts/CalSans-SemiBold.woff2',
+//   variable: '--font-calsans',
 // })
 
-// const inter = Inter({ subsets: ['latin'] })
-// const roboto = Roboto({ subsets: ['latin'] })
+const workSans = Work_Sans({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-worksans',
+  weight: ['400', '500', '700'],
+})
+
+const poppins = Poppins({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: ['400', '500', '700'],
+})
 
 // 2. Call `createTheme` and pass your custom values
 export const lightTheme = createTheme({
@@ -60,24 +66,28 @@ export const darkTheme = createTheme({
 function MyApp({ Component, pageProps }) {
   return (
     // <RootLayout>
-    <NextThemesProvider
-      // defaultTheme="system"
-      defaultTheme="system"
-      attribute="class"
-      value={{
-        light: lightTheme.className,
-        dark: darkTheme.className,
-      }}
-    >
-      <NextUIProvider>
-        <FullNavbar />
-        <main className='flex flex-col justify-start min-h-screen py-24 px-24'>
+    // <NextThemesProvider
+    //   // defaultTheme="system"
+    //   defaultTheme="system"
+    //   attribute="class"
+    //   value={{
+    //     light: lightTheme.className,
+    //     dark: darkTheme.className,
+    //   }}
+    // >
+    //   <NextUIProvider>
+    //     <FullNavbar />
+    //     <main className={`${workSans.variable}${poppins.variable}font-sans`}>
 
-          <Component {...pageProps} /></main>
-        <NewFooter />
-        <Analytics />
-      </NextUIProvider>
-    </NextThemesProvider>
+    <RootLayout>
+      <Component {...pageProps} />
+    </RootLayout>
+
+    //       </main>
+    //     <NewFooter />
+    //     <Analytics />
+    //   </NextUIProvider>
+    // </NextThemesProvider>
 
     // </RootLayout>
 

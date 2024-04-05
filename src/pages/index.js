@@ -36,13 +36,11 @@ function Home({ posts, image }) {
       </Head>
 
 
-      <div className="flex flex-col items-center justify-evenly px-24">
-        <div className="flex flex-col items-center justify-center min-h-screen p-24 space-x-10 space-y-8 lg:flex-row ">
-          <section id="about" className="mt-12">
+      <div className="flex flex-col items-center justify-evenly px-16">
+        <div className="flex flex-col items-center justify-center min-h-screen py-6 space-y-6 ">
+          <div className='flex flex-col items-center justify-center space-x-12 lg:flex-row '>
             <IntroTexts />
-            <IntroSocialButtons />
-          </section>
-          <div>
+
             <img
               src="/pk_profile.jpg"
               alt="Praweg Koirala"
@@ -50,9 +48,31 @@ function Home({ posts, image }) {
               // height={300}
               className="w-[300px] h-[320px] grayscale backdrop-blur-sm shadow-2xl shadow-slate-300 rounded-3xl hover:contrast-125 hover:grayscale-0 hover:rotate-3 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40"
             />
+
+
           </div>
 
+          <IntroSocialButtons />
+
         </div>
+
+        {/* <div className="flex flex-col items-center justify-center min-h-screen py-12 space-y-6 lg:space-x-10 ">
+
+          <IntroTexts />
+
+          <img
+            src="/pk_profile.jpg"
+            alt="Praweg Koirala"
+            // width={300}
+            // height={300}
+            className="w-[300px] h-[320px] grayscale backdrop-blur-sm shadow-2xl shadow-slate-300 rounded-3xl hover:contrast-125 hover:grayscale-0 hover:rotate-3 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40"
+          />
+
+          <IntroSocialButtons />
+
+        </div> */}
+
+
 
 
         {/* <div className="flex lg:flex-row  items-center justify-between min-h-screen p-24 space-x-20 ">
@@ -92,11 +112,26 @@ function Home({ posts, image }) {
         <div className="flex flex-col items-center justify-center min-h-screen space-y-6">
           <h3 className='text-4xl text-slate-600'>Recent Projects</h3>
 
-          <div className="flex flex-col lg:flex-row md:flex-col gap-4">
+          <div className="flex flex-col justify-center items-center space-y-4 lg:flex-row lg:space-x-4">
             {posts.slice(0, 3).map((project, index) => (
-              <ProjectCard key={index} projectTitle={project.title} projectDescription={project.title} publishedDate={project.date} imageURL="https://nextui.org/images/card-example-2.jpeg" projectLink={`/posts/${project.slug}`} />
+              <ProjectCard
+                key={index}
+                projectTitle={project.title}
+                projectDescription={project.title}
+                publishedDate={project.date}
+                imageURL="https://nextui.org/images/card-example-2.jpeg" projectLink={`/posts/${project.slug}`} />
             ))}
           </div>
+          {/* <div className="lg:flex sm:flex-row sm:justify-center sm:items-center sm:space-y-4 ">
+            {posts.slice(0, 3).map((project, index) => (
+              <ProjectCard
+                key={index}
+                projectTitle={project.title}
+                projectDescription={project.title}
+                publishedDate={project.date}
+                imageURL="https://nextui.org/images/card-example-2.jpeg" projectLink={`/posts/${project.slug}`} />
+            ))}
+          </div> */}
 
           <a target="_blank" href="https://github.com/koirpraw" rel="noopener noreferrer">
             <Button className="h-10">

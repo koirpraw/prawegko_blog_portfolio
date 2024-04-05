@@ -89,28 +89,29 @@ function BlogPage({ posts }) {
 
 
 
-      <div className="flex flex-col justify-center items-center w-full space-y-4 py-12">
+      <div className="flex flex-col justify-center items-center w-full space-y-4 px-12 lg:px-0 lg:pt-36 ">
 
 
 
-        <div className="w-3/5 space-y-4 ">
-          {/* <SearchBar onSearch={handleSearch}/> */}
+        {/* <div > */}
+        {/* <SearchBar onSearch={handleSearch}/> */}
 
-          {currentPosts.map((post, index) => (
-            <div key={index} className="hover:shadow-xl ">
-              <Card>
+        {currentPosts.map((post, index) => (
+          <div className="hover:shadow-xl w-full space-y-4 ">
+            <Link href={`/posts/${post.slug}`}>
+              <Card key={index}>
                 <CardHeader>
-                  <Link href={`/posts/${post.slug}`}>
-                    <CardTitle>
-                      <p>
-                        {post.title}
-                      </p>
 
-                    </CardTitle>
+                  <CardTitle>
+
+                    {post.title}
 
 
+                  </CardTitle>
 
-                  </Link>
+
+
+
                 </CardHeader>
 
                 <CardContent>
@@ -120,27 +121,28 @@ function BlogPage({ posts }) {
                 </CardContent>
                 <CardFooter >
 
-                  <Link href={`/posts/${post.slug}`}>
-                    <p className="text-center"> Read More..</p>
-                  </Link>
+                  {/* <Link href={`/posts/${post.slug}`}> */}
+                  <p className="text-center"> Read More..</p>
+                  {/* </Link> */}
 
                 </CardFooter>
               </Card>
+            </Link>
 
 
-            </div>
-          ))}
-          <div className="text-center space-x-1">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-              <Button onClick={() => handlePageChange(page)}>{page}</Button>
-
-
-            ))}
           </div>
+        ))}
+        <div className="text-center space-x-1">
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+            <Button onClick={() => handlePageChange(page)}>{page}</Button>
+
+
+          ))}
         </div>
-
-
       </div>
+
+
+      {/* </div> */}
 
     </>
   )

@@ -22,7 +22,7 @@ function projectsPage({ }) {
       </Head>
 
 
-      <div className="flex flex-col justify-center items-center min-h-screen">
+      <div className="flex flex-col justify-center items-center min-h-screen px-24">
 
 
         <Project />

@@ -11,7 +11,7 @@ const ProjectCard = ({ projectTitle, projectDescription, publishedDate, imageURL
       <div>
         <img src={imageURL} />
       </div>
-      <CardTitle><p className='text-xl font-medium text-slate-600 text-center'>{projectTitle}</p></CardTitle>
+      <CardTitle>{projectTitle}</CardTitle>
       <CardDescription>{projectDescription}</CardDescription>
     </CardHeader>
     <CardContent>
