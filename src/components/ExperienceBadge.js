@@ -1,19 +1,25 @@
-import { Badge, Container,Spacer,Text } from '@nextui-org/react';
+
+import { Badge } from '@/components/ui/badge'
 
 
 const ExperienceBadge = ({ icon, title }) => {
   return (
     <Badge
-    //   color="success"
-      variant={"bordered"}
-      css={{ mr: '0.1rem',backgroundColor:"white",shadow:"$sm" }}>
-        <Container  css={{display:"flex",alignItems:"center", direction:"row"}}>     
+
+      variant={"outlined"}
+      className='p-1.5 text-center font-light'
+
+    >
+
+      <div className='flex flex-grow justify-center items-center'>
         {icon}
-        <Spacer x={0.25}/>
-        <Text>{title}</Text>
-        </Container>
-     
-        
+
+        {title}
+      </div>
+
+
+
+
     </Badge>
   );
 }
