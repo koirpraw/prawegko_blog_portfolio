@@ -75,6 +75,7 @@ function Home({ posts, }) {
       </Head>
 
 
+
       <div className="flex flex-col items-center justify-evenly px-16">
         <div className="flex flex-col items-center justify-center min-h-screen py-6 space-y-3 lg:space-y-6 ">
           <div className='flex flex-col items-center justify-center space-x-12 lg:flex-row '>
@@ -139,6 +140,7 @@ function Home({ posts, }) {
         </div>
       </div>
     </>
+
 
 
 
