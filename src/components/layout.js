@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
             <NextUIProvider>
                 <FullNavbar />
 
-                <main className={`${workSans.variable}${poppins.variable}font-sans flex felx-col min-h-screen mx-auto max-w-2xl mt-48 pb-16`}>
+                <main className={`${workSans.variable}${poppins.variable}font-sans flex felx-col min-h-screen mx-auto mt-36 pb-16`}>
 
 
 

@@ -89,7 +89,7 @@ function BlogPage({ posts }) {
 
 
 
-      <div className="flex flex-col justify-center items-center w-full space-y-4 px-12 lg:px-0 lg:pt-36 ">
+      <div className="flex flex-col justify-center items-center w-full space-y-4 px-12 lg:px-0  lg:mx-48 ">
 
 
 
@@ -97,33 +97,26 @@ function BlogPage({ posts }) {
         {/* <SearchBar onSearch={handleSearch}/> */}
 
         {currentPosts.map((post, index) => (
-          <div className="hover:shadow-xl w-full space-y-4 ">
-            <Link href={`/posts/${post.slug}`}>
-              <Card key={index}>
+          <div className="hover:shadow-xl hover:scale-105 lg:w-3/4 space-y-6" key={index}>
+            <Link href={`/posts/${post.slug}`} key={index} >
+              <Card className="gap-6">
                 <CardHeader>
 
                   <CardTitle>
-
                     {post.title}
-
-
                   </CardTitle>
-
-
-
-
                 </CardHeader>
-
                 <CardContent>
-                  <p>{post.date}</p>
-                  <CardDescription><p >{post.description} ...</p></CardDescription>
-
+                  {post.date}
+                  <CardDescription>
+                    {post.description} ...
+                  </CardDescription>
                 </CardContent>
                 <CardFooter >
 
-                  {/* <Link href={`/posts/${post.slug}`}> */}
-                  <p className="text-center"> Read More..</p>
-                  {/* </Link> */}
+
+                  Read More..
+
 
                 </CardFooter>
               </Card>
@@ -133,8 +126,8 @@ function BlogPage({ posts }) {
           </div>
         ))}
         <div className="text-center space-x-1">
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <Button onClick={() => handlePageChange(page)}>{page}</Button>
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page, index) => (
+            <Button key={index} onClick={() => handlePageChange(page)}>{page}</Button>
 
 
           ))}

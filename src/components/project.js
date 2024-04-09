@@ -1,34 +1,55 @@
 import React from "react";
 // import { Card, Text, Grid, Link } from "@nextui-org/react";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './ui/card';
+import { Badge } from "@nextui-org/react";
+import Link from 'next/link';
 
-function Project() {
+function Project({ title, description, image, githubLink, projectLink, techStack }) {
   return (
-    <Card className="hover:shadow-xl">
-      <CardHeader>
-        <div className="flex justify-center">
-          <img className="h-[200px] w-[400px] rounded-lg" src="https://images.unsplash.com/photo-1710959781827-5fe4b8f058b2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-        </div>
-        <CardTitle className="text-center">
+    // <div className="flex flex-col w-full ">
+    <Card className=" hover:shadow-xl hover:scale-105">
+      <CardHeader >
 
-          PlaceHolder Project Title
+        <img
+
+          src={image}
+
+        />
+        {/* </div> */}
+        <CardTitle className="text-center text-lg">
+
+          {/* PlaceHolder Project Title */}
+          {title}
 
         </CardTitle>
         <CardDescription>
+          {description}
 
-          This Project gives you a quick overview on how to complete a task in very efficient manner.<br />
-          It is a snapshot of memory & time .........
+          {/* This Project gives you a quick overview on how to complete a task in very efficient manner.<br />
+          It is a snapshot of memory & time ......... */}
 
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="flex flex-wrap">
+        <h5>Tech Stack</h5> :{techStack}
+
+
+
 
 
       </CardContent>
-      <CardFooter className="justify-center"><p className="text-center">04/20/2020</p></CardFooter>
+
+      <CardFooter className="justify-center">
+        <Link href={githubLink}><Badge>Github</Badge></Link>
+
+        <Link href={projectLink}><Badge>Project</Badge></Link>
+      </CardFooter>
 
 
     </Card>
+
+    // </div>
+
 
   );
 }
