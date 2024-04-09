@@ -2,9 +2,7 @@
 
 import Head from "next/head";
 import Project from "@/components/project";
-import ProjectCard from "@/components/projectCard";
-import ProjectsData from "@/data/projects_data";
-import TempCard from "@/components/tempCard";
+
 
 
 
@@ -65,7 +63,7 @@ function projectsPage() {
 
       <div className="flex flex-col justify-center items-center min-h-screen p-12">
         <h3>Mobile & Web Applications</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-3/4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/4">
 
 
 

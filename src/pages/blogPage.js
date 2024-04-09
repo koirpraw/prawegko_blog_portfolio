@@ -89,42 +89,58 @@ function BlogPage({ posts }) {
 
 
 
-      <div className="flex flex-col justify-center items-center w-full space-y-4 px-12 lg:px-0  lg:mx-48 ">
+      <div className="flex flex-col justify-start items-center w-full space-y-10 px-12 lg:px-0  lg:mx-48 ">
+        <div className="grid lg:grid-cols-2 lg:w-3/4 space-y-6">
+          <div className="space-y-4">
+            <h3 className="text-xl">These are my little fruits of Knowledge in my evergrowing Knowledge tree</h3>
+            <p>I like to Document everything i learn and practice.
+              You will notice my writings have 3 different tags: Raw, Ripening & Ripe. These indicate different stages. I keep updating my writing as i spend more time and have more insights on that topic.
+              This allows me to not spend too much time on one topic & get trapped in perfectionist black hole. With That being said the writings you will come across can be raw and organic or as as ripe and complete. Pick you fruit with caution. You Have been warned !!
+            </p>
+            <p>I hope you can Find something sweet & juicy.🥭</p>
+
+          </div>
+
+        </div>
 
 
 
         {/* <div > */}
         {/* <SearchBar onSearch={handleSearch}/> */}
+        <div className="grid lg:grid-cols-2 lg:w-3/4 ">
+          {currentPosts.map((post, index) => (
+            <div className="mr-6 mb-6 " key={index}>
+              <Link href={`/posts/${post.slug}`} key={index} >
+                <Card className="hover:shadow-xl hover:scale-105">
+                  <CardHeader>
 
-        {currentPosts.map((post, index) => (
-          <div className="hover:shadow-xl hover:scale-105 lg:w-3/4 space-y-6" key={index}>
-            <Link href={`/posts/${post.slug}`} key={index} >
-              <Card className="gap-6">
-                <CardHeader>
-
-                  <CardTitle>
-                    {post.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  {post.date}
-                  <CardDescription>
-                    {post.description} ...
-                  </CardDescription>
-                </CardContent>
-                <CardFooter >
-
-
-                  Read More..
+                    <CardTitle>
+                      {post.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    {post.date}
+                    <CardDescription>
+                      {post.description} ...
+                    </CardDescription>
+                  </CardContent>
+                  <CardFooter >
 
 
-                </CardFooter>
-              </Card>
-            </Link>
+                    Read More..
 
 
-          </div>
-        ))}
+                  </CardFooter>
+                </Card>
+              </Link>
+
+
+            </div>
+          ))}
+
+        </div>
+
+
         <div className="text-center space-x-1">
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((page, index) => (
             <Button key={index} onClick={() => handlePageChange(page)}>{page}</Button>

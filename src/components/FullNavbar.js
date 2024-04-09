@@ -12,7 +12,7 @@ export default function FullNavbar() {
   const navItems = [
     { name: "Skills", link: "/skillsPage" },
     { name: "Projects", link: "/projectsPage" },
-    { name: "Blog", link: "/blogPage" },
+    { name: "Writings", link: "/blogPage" },
     { name: "About", link: "/aboutPage" },
   ];
 

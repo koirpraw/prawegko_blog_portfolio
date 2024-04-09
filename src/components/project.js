@@ -3,11 +3,12 @@ import React from "react";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './ui/card';
 import { Badge } from "@nextui-org/react";
 import Link from 'next/link';
+import { Code, ListCollapse } from 'lucide-react';
 
 function Project({ title, description, image, githubLink, projectLink, techStack }) {
   return (
     // <div className="flex flex-col w-full ">
-    <Card className=" hover:shadow-xl hover:scale-105">
+    <Card className=" hover:shadow-xl hover-shadow-">
       <CardHeader >
 
         <img
@@ -40,9 +41,10 @@ function Project({ title, description, image, githubLink, projectLink, techStack
       </CardContent>
 
       <CardFooter className="justify-center">
-        <Link href={githubLink}><Badge>Github</Badge></Link>
+        <Link href={githubLink}><Badge><Code /> SourceCode</Badge></Link>
 
         <Link href={projectLink}><Badge>Project</Badge></Link>
+
       </CardFooter>
 
 
