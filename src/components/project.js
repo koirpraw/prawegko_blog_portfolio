@@ -8,7 +8,7 @@ import { Code, ListCollapse } from 'lucide-react';
 function Project({ title, description, image, githubLink, projectLink, techStack }) {
   return (
     // <div className="flex flex-col w-full ">
-    <Card className=" hover:shadow-xl hover-shadow-">
+    <Card className=" hover:shadow-xl lg:h-[800px]">
       <CardHeader >
 
         <img
