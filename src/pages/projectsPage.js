@@ -14,7 +14,7 @@ function projectsPage() {
       description:
         'A Clone of Bing Co-Pilot app built with Flutter using Open AI Api. ',
       techStack: ['Flutter', 'OpenAI'],
-      image: "https://tailwindflex.com/public/images/thumbnails/coming-soon-page/thumb_u.min.webp",
+      image: "https://pk-web-assets.s3.amazonaws.com/gitub-feature-template2.png",
       link: 'https://prawegko.dev',
       github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
     },
@@ -62,7 +62,7 @@ function projectsPage() {
 
 
       <div className="flex flex-col justify-center items-center min-h-screen p-12">
-        <h3>Mobile & Web Applications</h3>
+        <h3 className="mb-6">Mobile & Web Applications</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/4">
 
 
@@ -74,7 +74,7 @@ function projectsPage() {
               image={project.image}
               githubLink={project.github}
               projectLink={project.link}
-              techStack={project.techStack}
+              techStack={project.techStack.join(" | ")}
             />
           ))}
 

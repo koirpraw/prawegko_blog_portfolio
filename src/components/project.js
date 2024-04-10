@@ -12,7 +12,7 @@ function Project({ title, description, image, githubLink, projectLink, techStack
       <CardHeader >
 
         <img
-
+          width="full"
           src={image}
 
         />
@@ -23,27 +23,29 @@ function Project({ title, description, image, githubLink, projectLink, techStack
           {title}
 
         </CardTitle>
-        <CardDescription>
-          {description}
 
-          {/* This Project gives you a quick overview on how to complete a task in very efficient manner.<br />
-          It is a snapshot of memory & time ......... */}
-
-        </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-wrap">
-        <h5>Tech Stack</h5> :{techStack}
+        <h5>{techStack}</h5>
 
 
 
 
 
       </CardContent>
+      <CardDescription className="ml-6 text-lg">
+        {description}
 
-      <CardFooter className="justify-center">
-        <Link href={githubLink}><Badge><Code /> SourceCode</Badge></Link>
+        {/* This Project gives you a quick overview on how to complete a task in very efficient manner.<br />
+          It is a snapshot of memory & time ......... */}
 
-        <Link href={projectLink}><Badge>Project</Badge></Link>
+      </CardDescription>
+
+      <CardFooter className=" space-x-2 font-medium mt-4">
+        {githubLink == "" || null ? '' : <Link href={githubLink}><div className="flex justify-evenly items-center"><Code /> <p>Source Code</p></div></Link>}
+
+
+        {projectLink == "" ? <Link href={projectLink}>Live Demo</Link> : ""}
 
       </CardFooter>
 
