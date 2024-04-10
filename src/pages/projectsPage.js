@@ -2,9 +2,7 @@
 
 import Head from "next/head";
 import Project from "@/components/project";
-import ProjectCard from "@/components/projectCard";
-import ProjectsData from "@/data/projects_data";
-import TempCard from "@/components/tempCard";
+
 
 
 
@@ -12,11 +10,11 @@ import TempCard from "@/components/tempCard";
 function projectsPage() {
   const projects = [
     {
-      title: 'Bing Co-Pilot AI Chatbot App, Mobile Application',
+      title: 'AI Chatbot App, Mobile Application',
       description:
         'A Clone of Bing Co-Pilot app built with Flutter using Open AI Api. ',
       techStack: ['Flutter', 'OpenAI'],
-      image: "https://tailwindflex.com/public/images/thumbnails/coming-soon-page/thumb_u.min.webp",
+      image: "https://pk-web-assets.s3.amazonaws.com/gitub-feature-template2.png",
       link: 'https://prawegko.dev',
       github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
     },
@@ -33,7 +31,7 @@ function projectsPage() {
       title: 'MERN Stack, Job Finder/Job Listing App, Web Application',
       description:
         'A full Stack App with MongoDB, Express JS, React & Node JS. Job Listing App that allows to create new Job listing,and edit/delete posting',
-      techStack: ['Flutter', 'OpenAI'],
+      techStack: ['MongoDB', 'Express JS', 'React', 'Node JS'],
       image: "https://images.unsplash.com/photo-1710959781827-5fe4b8f058b2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: '',
       github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
@@ -42,7 +40,7 @@ function projectsPage() {
       title: 'Task Management App ',
       description:
         'A full Stack App with MongoDB, Express JS, React & Node JS. Job Listing App that allows to create new Job listing,and edit/delete posting',
-      techStack: ['Flutter', 'OpenAI'],
+      techStack: ['Flutter', 'GetX'],
       image: "https://images.unsplash.com/photo-1710959781827-5fe4b8f058b2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: '',
       github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
@@ -64,8 +62,8 @@ function projectsPage() {
 
 
       <div className="flex flex-col justify-center items-center min-h-screen p-12">
-        <h3>Mobile & Web Applications</h3>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:w-3/4">
+        <h3 className="mb-6">Mobile & Web Applications</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/4">
 
 
 
@@ -76,7 +74,7 @@ function projectsPage() {
               image={project.image}
               githubLink={project.github}
               projectLink={project.link}
-              techStack={project.techStack}
+              techStack={project.techStack.join(" | ")}
             />
           ))}
 

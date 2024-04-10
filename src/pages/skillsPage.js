@@ -27,7 +27,8 @@ function SkillsPage() {
     'Flutter Bootcamp with Dart ,The Complete Guide 2021 - by Dr.Angela Yu, The App Brewery',
     'Flutter & Dart - The Complete Guide [2021 Edition] - by Dr.Angela Yu, The App Brewery'
   ];
-  const currentProjects = ['Rebuilding this Site Prawegko.dev with NextJS 14 AppRouter, TypeScript & Tailwind CSS', 'Kids Learning App in Flutter(Mobile) & NextJS(web)'];
+  const currentProjects = ['Rebuilding this Site Prawegko.dev with NextJS 14 AppRouter, TypeScript & Tailwind CSS',
+    'Kids Learning App, Mobile(Flutter) & Web(NextJS)'];
 
   const techStacks = []
 
@@ -46,7 +47,7 @@ function SkillsPage() {
 
 
 
-      <main className="flex flex-col justify-center items-center min-h-screen w-full space-y-6 py-12">
+      <main className="flex flex-col justify-center items-center min-h-screen space-y-6 py-12 w-full">
 
         <div className="flex flex-col justify-center items-center px-4 space-y-3">
           <h3 className="text-3xl"> My Tech Stack</h3>

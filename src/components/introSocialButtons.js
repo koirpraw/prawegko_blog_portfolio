@@ -2,6 +2,7 @@
 import { Button } from './ui/button'
 import React from 'react'
 import Link from 'next/link'
+import { Download } from 'lucide-react'
 
 export default function IntroSocialButtons() {
 
@@ -18,8 +19,12 @@ export default function IntroSocialButtons() {
                 ))}
             </div>
             <Button asChild className="h-12">
-                <Link href="/prawegResume_v5.pdf" download="PrawegKoirala_Resume" target="_blank" >Download Resume</Link></Button>
+                <Link href="/prawegResume_v5.pdf" download="PrawegKoirala_Resume" target="_blank" className='space-x-2'>
+                    <p>Resume.pdf</p>  <Download />
+                </Link></Button>
 
         </div>
     )
 }
+
+

@@ -10,6 +10,7 @@ import { getAllPublished, getSingleBlogPostBySlug } from "@/lib/notion.js";
 
 
 
+
 const CodeBlock = ({ language, codestring }) => {
 
 
@@ -45,7 +46,7 @@ const Post = ({ post }) => {
         {/* <h1 style={{ textAlign: "center" }}>🌐 BLOG</h1> */}
         <h2 className="text-3xl">{post.metadata.title}</h2>
 
-        <section className="flex flex-col justify-evenly  space-y-6">
+        <section className="flex flex-col justify-evenly  ">
 
 
           <div className="flex flex-row justify-around items-center">
@@ -53,7 +54,8 @@ const Post = ({ post }) => {
             <h5>📖 time:&nbsp;{post.metadata.readTime}</h5>
             <p className="color-grey-600"> 🏷️ &nbsp; &nbsp;{post.metadata.tags.join(' | ')}</p>
           </div>
-          <div >
+
+          <div  >
             <ReactMarkdown
               components={{
                 code({ node, inline, className, children, ...props }) {
@@ -71,8 +73,15 @@ const Post = ({ post }) => {
                 }
               }}>{post.markdown}</ReactMarkdown>
 
-          </div>
+            <div className="flex justify-center text-gray-400">
+              <p>This post was last updated on { }</p>
 
+            </div>
+            {/* <Badge variant='outline' className='text-center'>❤️ 200</Badge> */}
+
+
+
+          </div>
 
 
         </section>
