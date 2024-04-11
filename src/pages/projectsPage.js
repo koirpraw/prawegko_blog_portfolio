@@ -2,12 +2,21 @@
 
 import Head from "next/head";
 import Project from "@/components/project";
-
-
+// {
+//   title: 'Bing Co-Pilot Clone-Flutter',
+//   description:
+//       'An AI-Chatbot. Clone of Bing Copilot',
+//   techUsed: ['Flutter', 'OpenAI'],
+//   image: frize,
+//   link: '',
+//   github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
+// },
 
 
 
 function projectsPage() {
+
+
   const projects = [
     {
       title: 'AI Chatbot App, Mobile Application',
@@ -62,7 +71,7 @@ function projectsPage() {
 
 
       <div className="flex flex-col justify-center items-center min-h-screen p-12">
-        <h3 className="mb-6">Mobile & Web Applications</h3>
+        <h3 className="mb-12 text-5xl font-pk">Projects</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/4">
 
 

@@ -60,14 +60,14 @@ function SkillsPage() {
           <div className="grid grid-cols-4 gap-4">
             <ExperienceBadge title="AndroidStudio" icon={<SiAndroidstudio size="18" color="green" />} />
             <ExperienceBadge title="VS Code" icon={<SiVisualstudiocode size="18" color="blue" />} />
-            <ExperienceBadge title="iOS" icon={<SiApple size="18" color="black" />} />
+            {/* <ExperienceBadge title="iOS" icon={<SiApple size="18" color="black" />} /> */}
             <ExperienceBadge title="XCODE" icon={<SiXcode size="18" color="blue" />} />
           </div>
 
           <div className="grid grid-cols-4 gap-4">
             <ExperienceBadge title="Dart" icon={<SiDart size="18" color="blue" />} />
             <ExperienceBadge title="JavaScript/TypeScript" icon={<SiJavascript size="18" color="red" />} />
-            <ExperienceBadge title="Html" icon={<SiHtml5 size="18" color="red" />} />
+            <ExperienceBadge title="Html5" icon={<SiHtml5 size="18" color="red" />} />
             <ExperienceBadge title="CSS" icon={<SiCss3 size="18" color="red" />} />
           </div>
 

@@ -2,6 +2,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
+  // darkMode: false,
   content: [
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
@@ -21,7 +22,13 @@ module.exports = {
         xl: "1440px",
       },
     },
+
     extend: {
+      // backgroundImage: {
+      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      //   "gradient-conic":
+      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -58,13 +65,15 @@ module.exports = {
         },
       },
       fontFamily: {
-        'sans': ['Helvetica', 'Arial'],
-        'serif': ['ui-serif', 'Georgia'],
-        'mono': ['ui-monospace', 'SFMono-Regular'],
-        'display': ['Indie-Flower'],
-        // 'handwriting': ['Permanent Marker'],
-        'body': ['"Open Sans"']
+        sans: ['Helvetica', 'Arial'],
+        serif: ['ui-serif', 'Georgia'],
+        mono: ['ui-monospace', 'SFMono-Regular'],
+        display: ['Indie-Flower'],
+        handwriting: ['Permanent Marker'],
+        body: ['"Open Sans"'],
+        pk: ["Satisfy", "cursive"]
       },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

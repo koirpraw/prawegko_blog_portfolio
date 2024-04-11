@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Moon, Sun } from "lucide-react";
+import ThemeButton from "./ThemeButton";
 // import { useTheme } from "@nextui-org/react";
 // import { useTheme as useNextTheme } from "next-themes";
 
@@ -44,6 +45,9 @@ export default function FullNavbar() {
                 <p className="font-light text-xl lg:text-xl text-slate-600 hover:text-blue-500 "> {item.name}</p>
               </Link>
             ))}
+        </div>
+        <div>
+          <ThemeButton />
         </div>
 
       </div>
