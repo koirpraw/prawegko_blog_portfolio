@@ -42,20 +42,20 @@ const Post = ({ post }) => {
 
 
 
-      <main className="flex flex-col justify-start items-center p-24 min-h-screen ">
+      <main className="flex flex-col justify-center items-center space-y-6   min-h-screen lg:mx-48 mx-12 ">
         {/* <h1 style={{ textAlign: "center" }}>🌐 BLOG</h1> */}
-        <h2 className="text-3xl">{post.metadata.title}</h2>
+        <h2 className="text-4xl my-12">{post.metadata.title}</h2>
 
-        <section className="flex flex-col justify-evenly  ">
+        <section className="flex flex-col justify-center ">
 
 
-          <div className="flex flex-row justify-around items-center">
-            <h6 >🗓️ {post.metadata.date}</h6>
+          <div className="flex flex-row justify-around items-center space-y-6">
+            <h5 >🗓️ {post.metadata.date}</h5>
             <h5>📖 time:&nbsp;{post.metadata.readTime}</h5>
             <p className="color-grey-600"> 🏷️ &nbsp; &nbsp;{post.metadata.tags.join(' | ')}</p>
           </div>
 
-          <div  >
+          <div className="flex flex-col mx-6 space-y-4" >
             <ReactMarkdown
               components={{
                 code({ node, inline, className, children, ...props }) {
@@ -74,7 +74,7 @@ const Post = ({ post }) => {
               }}>{post.markdown}</ReactMarkdown>
 
             <div className="flex justify-center text-gray-400">
-              <p>This post was last updated on { }</p>
+              <p>This post was last updated on {post.metadata.date}</p>
 
             </div>
             {/* <Badge variant='outline' className='text-center'>❤️ 200</Badge> */}

@@ -1,9 +1,9 @@
 
 
 // import '../styles/globals.css';
-import { createTheme, NextUIProvider, NextThemeProvider } from "@nextui-org/react"
-import { NextThemesProvider } from 'next-themes'
-import { Work_Sans, Poppins } from "next/font/google"
+import { NextUIProvider } from "@nextui-org/react"
+
+import { Work_Sans, Poppins, Montserrat } from "next/font/google"
 import FullNavbar from "@/components/FullNavbar";
 import NewFooter from "@/components/NewFooter";
 import { Analytics } from "@vercel/analytics/react";
@@ -23,59 +23,37 @@ const poppins = Poppins({
     weight: ['400', '500', '700'],
 })
 
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    weight: ['100', '200', '400', '500',],
+    variable: '--font-montserrat',
+
+})
+const combinedClass = `
+${montserrat.className}
+${poppins.className}
+${workSans.className}
+`
 // 2. Call `createTheme` and pass your custom values
-export const lightTheme = createTheme({
-    type: 'light',
-    theme: {
-        colors: {
-            primary: '$blue',
-            background: '$white',
-            text: '#000',
 
-        }, // optional
-    }
-})
-
-export const darkTheme = createTheme({
-    type: 'dark',
-
-    theme: {
-        colors: {
-            background: '#1d1d1d',
-            text: '#fff',
-
-
-        }, // optional
-    }
-
-})
 
 export default function RootLayout({ children }) {
     return (
         <>
-            {/* <body className=""> */}
-            {/* <NextThemesProvider
 
-                defaultTheme="system"
-                attribute="class"
-                value={{
-                    light: lightTheme.className,
-                    dark: darkTheme.className,
-                }}
-            > */}
-            <NextUIProvider>
-                <FullNavbar />
 
-                <main className={`${workSans.variable}${poppins.variable}font-sans flex felx-col min-h-screen mx-auto mt-36 pb-16`}>
+            {/* <NextUIProvider> */}
+            <FullNavbar />
+
+            <main className={`${combinedClass}font-sans flex felx-col min-h-screen mx-auto mt-40 pb-16`}>
 
 
 
-                    {children}</main>
-                <NewFooter />
-                <Analytics />
-            </NextUIProvider>
-            {/* </NextThemesProvider> */}
-            {/* </body> */}
+                {children}</main>
+            <NewFooter />
+            <Analytics />
+            {/* </NextUIProvider> */}
+
 
         </>
     )

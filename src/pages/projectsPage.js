@@ -70,8 +70,8 @@ function projectsPage() {
       </Head>
 
 
-      <div className="flex flex-col justify-center items-center min-h-screen p-12">
-        <h3 className="mb-12 text-5xl font-pk">Projects</h3>
+      <div className="flex flex-col justify-center items-center min-h-screen px-6">
+        <h3 className="mb-12 text-5xl">Projects</h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/4">
 
 

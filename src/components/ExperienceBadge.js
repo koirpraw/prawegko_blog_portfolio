@@ -7,14 +7,14 @@ const ExperienceBadge = ({ icon, title }) => {
     <Badge
 
       variant={"outlined"}
-      className='p-1.5 text-center font-light'
+      className='text-center font-light'
 
     >
 
-      <div className='flex flex-grow justify-center items-center'>
+      <div className='flex flex-col lg:flex-row justify-center items-center'>
         {icon}
 
-        {title}
+        <p className='font-light text-sm'>{title}</p>
       </div>
 
 

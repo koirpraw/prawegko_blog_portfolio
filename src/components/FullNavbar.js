@@ -26,15 +26,18 @@ export default function FullNavbar() {
 
   return (
 
-    <nav className="fixed mx-auto z-10 top-0 left-0 right-0 bg-white backdrop-blur-md bg-opacity-50 w-full ">
+    <nav className="fixed mx-auto z-10 top-0 left-0 right-0 light:bg-white dark:bg-black-600 backdrop-blur-md dark: bg-opacity-50 dark:bg-opacity-50 w-full py-6 ">
       {/* <div className="flex justify-between items-center space-x-4 p-4"> */}
-      <div className="flex container flex-wrap items-center  justify-center  py-6 ">
-        <div className=" space-x-4">
+      <div className="flex container flex-wrap items-center  justify-center">
+        <div className="flex flex-row w-3/4 justify-between">
           <Link href="/">
-            <p className="text-xl lg:text-3xl text-slate-600 font-light  hover:text-blue-500 ">P | K</p>
+            <p className="text-xl lg:text-4xl font-thin light:text-slate-400 hover:text-blue-500 ">P | K</p>
           </Link>
+
+          <ThemeButton />
+
         </div>
-        <div className="flex lg:space-x-4">
+        <div className="flex flex-row w-3/4 justify-center items-center lg:space-x-4">
           {navItems &&
             navItems.map((item) => (
               <Link
@@ -42,13 +45,11 @@ export default function FullNavbar() {
                 href={item.link}
                 className="p-6 "
               >
-                <p className="font-light text-xl lg:text-xl text-slate-600 hover:text-blue-500 "> {item.name}</p>
+                <p className="font-thin text-xl lg:text-3xl light:text-slate-400 hover:text-blue-500 "> {item.name}</p>
               </Link>
             ))}
         </div>
-        <div>
-          <ThemeButton />
-        </div>
+
 
       </div>
 

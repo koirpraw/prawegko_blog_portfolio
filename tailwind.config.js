@@ -71,7 +71,7 @@ module.exports = {
         display: ['Indie-Flower'],
         handwriting: ['Permanent Marker'],
         body: ['"Open Sans"'],
-        pk: ["Satisfy", "cursive"]
+        signature: ["Sacramento", "cursive",]
       },
 
       borderRadius: {
