@@ -93,12 +93,12 @@ function BlogPage({ posts }) {
         <div className="flex flex-col justify-center items-center lg:w-3/4 space-y-6">
           <div className="space-y-4 lg:mr-24">
             {/* <h3 className="text-xl">These are my little fruits of Knowledge in my evergrowing Knowledge tree</h3> */}
-            <h3 className="text-3xl">Checkout my fruits of Knowledge<br /> from my evergrowing knowledge tree</h3>
+            {/* <h3 className="text-3xl">Checkout my fruits of Knowledge<br /> from my evergrowing knowledge tree</h3>
             <p className="font-thin">I try to Document everything i learn and practice.I am sharing those here.
               You will notice the writings have 3 different tags: Raw, growing & Ripe. I keep updating the content as i spend more time and have more insights on that topic.
               This allows me to not spend too much time on one topic & get trapped in perfectionist black hole. With That being said the writings you will come across can be raw and organic or as as ripe and complete. Pick you fruit with caution. You Have been warned !!
             </p>
-            <p>I hope you can Find something sweet & juicy.🥭</p>
+            <p>I hope you can Find something sweet & juicy.🥭</p> */}
 
           </div>
 
