@@ -8,7 +8,7 @@ function AboutPage() {
     var sonAge = currentYear - 2022;
     var usDuration = currentYear - 2006;
     return (
-        <div className='flex flex-col justify-center items-center space-y-8 w-full px-12'>
+        <div className='flex flex-col justify-center items-center space-y-8 w-full px-6'>
             <div className='flex justify-center lg:w-3/4'>
                 <h3 className="text-3xl font-light ">Welcome to My Digital WorkShop. I am so Glad to Virtually meet you.</h3>
             </div>
@@ -22,7 +22,7 @@ function AboutPage() {
                 <p className='text-lg'>My Name is Praweg & i live in Colorado with my beautiful Wife, a {sonAge} yrs old son & a {bellaAge} yrs old fluffy poodle named Bella.
                     I was born and raised in Nepal and have been calling US my second home for past {usDuration} yrs.
                 </p> */}
-                <p className='text-lg font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                <p className='font-thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.

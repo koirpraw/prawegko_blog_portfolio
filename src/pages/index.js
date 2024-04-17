@@ -76,9 +76,9 @@ function Home({ posts, }) {
 
 
 
-      <div className="flex flex-col items-center justify-evenly px-16">
+      <div className="flex flex-col items-center justify-evenly ">
         <div className="flex flex-col items-center justify-center min-h-screen py-6 space-y-3 lg:space-y-6 ">
-          <div className='flex flex-col items-center justify-around space-x-12 lg:flex-row '>
+          <div className='flex flex-col items-center justify-evenly space-x-12 lg:flex-row '>
             <IntroTexts />
 
             <img
@@ -86,7 +86,7 @@ function Home({ posts, }) {
               alt="Praweg Koirala"
               // width={300}
               // height={300}
-              className="w-[300px] h-[320px] grayscale backdrop-blur-sm shadow-2xl shadow-slate-300 rounded-3xl hover:contrast-125 hover:grayscale-0 hover:rotate-3 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40"
+              className="w-[300px] h-[320px] grayscale backdrop-blur-sm light:shadow-2xl shadow-slate-300 rounded-3xl hover:contrast-125 hover:grayscale-0 hover:rotate-3 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-500/40"
             />
 
 
@@ -101,10 +101,10 @@ function Home({ posts, }) {
           <h3 className='text-4xl text-slate-600'>Recent Posts</h3>
           <div className='p-4'>
 
-            {posts.slice(0, 8).map((post, index) => (
+            {posts.slice(0, 5).map((post, index) => (
               <div key={index} className='flex flex-row justify-start items-center space-x-16  p-3'>
-                <Link href={`/posts/${post.slug}`}><p className='text-slate-600 text-xl font-light hover:text-blue-500'>{post.title}</p></Link>
-                <p className='text-slate-600 text-lg font-light'>{post.date}</p>
+                <Link href={`/posts/${post.slug}`}><p className='text-slate-600  font-light hover:text-blue-500'>{post.title}</p></Link>
+                <p className='light:text-slate-600 text-lg font-light'>{post.date}</p>
               </div>
 
             ))}
@@ -114,8 +114,8 @@ function Home({ posts, }) {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center justify-center min-h-screen space-y-6">
-          <h3 className='text-4xl text-slate-600'>Recent Projects</h3>
+        <div className="flex flex-col items-center justify-center min-h-screen space-y-6 px-6">
+          <h3 className='text-4xl light:text-slate-600'>Recent Projects</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:w-3/4">
             {projects.slice(0, 3).map((project, index) => (

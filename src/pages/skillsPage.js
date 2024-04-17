@@ -47,27 +47,27 @@ function SkillsPage() {
 
 
 
-      <main className="flex flex-col justify-center items-center min-h-screen space-y-6 py-12 w-full">
+      <main className="flex flex-col justify-center items-center min-h-screen space-y-12 py-12 w-full">
 
         <div className="flex flex-col justify-center items-center px-4 space-y-3">
           <h3 className="text-3xl"> My Tech Stack</h3>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-2">
             <ExperienceBadge title="Web" icon={<SiReact size="18" color="blue" />} />
             <ExperienceBadge title="Android" icon={<SiAndroid size="18" color="green" />} />
             <ExperienceBadge title="iOS" icon={<SiApple size="18" color="black" />} />
           </div>
 
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-2">
             <ExperienceBadge title="AndroidStudio" icon={<SiAndroidstudio size="18" color="green" />} />
             <ExperienceBadge title="VS Code" icon={<SiVisualstudiocode size="18" color="blue" />} />
-            <ExperienceBadge title="iOS" icon={<SiApple size="18" color="black" />} />
+            {/* <ExperienceBadge title="iOS" icon={<SiApple size="18" color="black" />} /> */}
             <ExperienceBadge title="XCODE" icon={<SiXcode size="18" color="blue" />} />
           </div>
 
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-2">
             <ExperienceBadge title="Dart" icon={<SiDart size="18" color="blue" />} />
-            <ExperienceBadge title="JavaScript/TypeScript" icon={<SiJavascript size="18" color="red" />} />
-            <ExperienceBadge title="Html" icon={<SiHtml5 size="18" color="red" />} />
+            <ExperienceBadge title="JS/TS" icon={<SiJavascript size="18" color="red" />} />
+            <ExperienceBadge title="Html5" icon={<SiHtml5 size="18" color="red" />} />
             <ExperienceBadge title="CSS" icon={<SiCss3 size="18" color="red" />} />
           </div>
 
@@ -107,7 +107,7 @@ function SkillsPage() {
         </div>
 
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-evenly space-y-4 items-center px-6">
           <h3 className="text-3xl">Certificates:</h3>
           <ul>
             {certificates.map((certificate, index) => (
@@ -128,7 +128,7 @@ function SkillsPage() {
             </p>
           </div> */}
 
-        <div className="flex flex-col justify-center items-center px-6">
+        <div className="flex flex-col justify-center space-y-4 items-center px-6">
           <h3 className="text-3xl">Training & Courses</h3>
 
           <ul>
@@ -139,7 +139,7 @@ function SkillsPage() {
           </ul>
         </div>
 
-        <div className="flex flex-col justify-center items-center px-6">
+        <div className="flex flex-col justify-center space-y-4 items-center px-6">
           <h3 className="text-3xl">Currently working on:</h3>
           <ul>
             {currentProjects.map((project, index) => (
