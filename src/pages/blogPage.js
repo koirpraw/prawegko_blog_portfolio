@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../styles/Home.module.css";
+
 import { getAllPublished, } from "@/lib/notion";
 import Head from "next/head";
 import { Card, CardHeader, CardContent, CardDescription, CardTitle, CardFooter } from "@/components/ui/card"

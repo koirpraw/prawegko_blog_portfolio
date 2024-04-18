@@ -2,12 +2,12 @@ import React from "react";
 import FooterNavLinks from "./footerNavLinks";
 
 function NewFooter() {
-    const today = new Date();
-    const year = today.getFullYear().toString();
-    const shortYear = year.substring(2);
+    let today = new Date();
+    let day = today.getUTCDay() + 1;
+    let date = today.getUTCDate();
+    let year = today.getUTCFullYear().toString().slice(2);
 
-
-    const todayDate = `0${today.getDay()}.0${today.getMonth()}.${shortYear}`;
+    let todayDate = `${day}/${date}/${year}`;
 
 
 
