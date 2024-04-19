@@ -42,10 +42,10 @@ function Project({ title, description, image, githubLink, projectLink, techStack
       </CardDescription>
 
       <CardFooter className=" space-x-2 font-medium mt-4">
-        {githubLink == "" || null ? '' : <Link href={githubLink}><div className="flex justify-evenly items-center"><Code /> <p>Source Code</p></div></Link>}
+        {githubLink == "" || null ? '' : <Link href={githubLink} className="hover:text-blue-400"><div className="flex justify-evenly items-center"><Code /> <p>Source Code</p></div></Link>}
 
 
-        {projectLink == "" ? <Link href={projectLink}>Live Demo</Link> : ""}
+        {projectLink == "" ? <Link href={projectLink} className="hover:text-blue-400">Live Demo</Link> : ""}
 
       </CardFooter>
 

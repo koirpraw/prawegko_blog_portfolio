@@ -98,7 +98,7 @@ function Home({ posts, }) {
 
 
         <div className="flex flex-col items-center justify-center min-h-screen ">
-          <h3 className='text-4xl text-slate-600'>Recent Posts</h3>
+          <h3 className='text-4xl text-slate-600'>Recent Notes</h3>
           <div className='p-4'>
 
             {posts.slice(0, 5).map((post, index) => (
@@ -110,7 +110,7 @@ function Home({ posts, }) {
             ))}
           </div>
           <Link href='/blogPage'>
-            <Button>All Posts</Button>
+            <Button>All Notes</Button>
           </Link>
         </div>
 

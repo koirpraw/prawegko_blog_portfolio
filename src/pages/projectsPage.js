@@ -2,15 +2,7 @@
 
 import Head from "next/head";
 import Project from "@/components/project";
-// {
-//   title: 'Bing Co-Pilot Clone-Flutter',
-//   description:
-//       'An AI-Chatbot. Clone of Bing Copilot',
-//   techUsed: ['Flutter', 'OpenAI'],
-//   image: frize,
-//   link: '',
-//   github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
-// },
+import TransitionHeader from "@/components/transitionHeader";
 
 
 
@@ -19,7 +11,7 @@ function projectsPage() {
 
   const projects = [
     {
-      title: 'AI Chatbot App, Mobile Application',
+      title: 'AI Chatbot App, Flutter',
       description:
         'A Clone of Bing Co-Pilot app built with Flutter using Open AI Api. ',
       techStack: ['Flutter', 'OpenAI'],
@@ -28,7 +20,7 @@ function projectsPage() {
       github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
     },
     {
-      title: 'GoatReport- A Fitness Tracking app, Mobile Application',
+      title: 'GoatReport- A Fitness Tracking app, Flutter',
       description:
         'UI clone of Fitness Tracking app called Metriport. Uses SynFusion Library for Data Visulaization. A great example to implement UX for data heavy applications. ',
       techStack: ['Flutter', 'GetX', 'Sync Fusion'],
@@ -48,8 +40,8 @@ function projectsPage() {
     {
       title: 'Task Management App ',
       description:
-        'A full Stack App with MongoDB, Express JS, React & Node JS. Job Listing App that allows to create new Job listing,and edit/delete posting',
-      techStack: ['Flutter', 'GetX'],
+        'Task Management app that uses SQLite for persistent local storage. GetX State management.Lottie Animations',
+      techStack: ['Flutter', 'GetX', 'SQFLite', "Lottie"],
       image: "https://images.unsplash.com/photo-1710959781827-5fe4b8f058b2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: '',
       github: 'https://github.com/koirpraw/bing_copilot_ai_clone_flutter',
@@ -71,7 +63,7 @@ function projectsPage() {
 
 
       <div className="flex flex-col justify-center items-center min-h-screen px-6">
-        <h3 className="mb-12 text-5xl">Projects</h3>
+        <TransitionHeader title="Projects" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:w-3/4">
 
 

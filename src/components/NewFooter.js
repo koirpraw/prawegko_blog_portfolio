@@ -3,11 +3,11 @@ import FooterNavLinks from "./footerNavLinks";
 
 function NewFooter() {
     let today = new Date();
-    let day = today.getUTCDay() + 1;
-    let date = today.getUTCDate();
+    let day = today.getUTCDate();
+    let month = today.getUTCMonth() + 1;
     let year = today.getUTCFullYear().toString().slice(2);
 
-    let todayDate = `${day}/${date}/${year}`;
+    let todayDate = `${day}/${month}/${year}`;
 
 
 
@@ -23,7 +23,9 @@ function NewFooter() {
                         </a>
                     </p>
                     <div className="flex flex-col justify-center items-center space-x-4">
-                        <p className="text-5xl font-signature">Prawegko</p><p className="text-gray-400">{todayDate}</p>
+                        <p className="text-5xl font-signature">Prawegko</p>
+                        <p className="text-gray-400">{todayDate}</p>
+                        {/* <GeneralUtils /> */}
 
                     </div>
                 </div>

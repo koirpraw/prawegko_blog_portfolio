@@ -31,7 +31,7 @@ export default function FullNavbar() {
       <div className="flex container flex-wrap items-center  justify-center">
         <div className="flex flex-row w-3/4 justify-between pt-6">
           <Link href="/">
-            <p className="text-xl lg:text-4xl font-thin light:text-slate-400 hover:text-blue-500 ">P | K</p>
+            <p className="text-xl lg:text-4xl light:text-slate-400 hover:text-blue-500 ">P | K</p>
           </Link>
 
           <ThemeButton />
@@ -45,7 +45,7 @@ export default function FullNavbar() {
                 href={item.link}
                 className="p-6 "
               >
-                <p className="font-thin text-xl lg:text-3xl light:text-slate-400 hover:text-blue-500 "> {item.name}</p>
+                <p className="font-extralight text-xl lg:text-3xl light:text-slate-400 hover:text-blue-500 "> {item.name}</p>
               </Link>
             ))}
         </div>

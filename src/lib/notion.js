@@ -3,7 +3,7 @@ const notion = new Client({
   auth: process.env.NOTION_TOKEN,
 })
 
- export const getAllPublished = async () => {
+export const getAllPublished = async () => {
   const posts = await notion.databases.query({
     database_id: process.env.DATABASE_ID,
     filter: {
@@ -23,28 +23,42 @@ const notion = new Client({
   return allPosts.map((post) => {
     return getPageMetaData(post);
   });
- };
- 
- const getPageMetaData = (post) => {
+};
+
+const getPageMetaData = (post) => {
   const getTags = (tags) => {
     const allTags = tags.map((tag) => {
       return tag.name;
     });
     return allTags;
   };
+
+
   return {
     id: post.id,
     title: post.properties.Name.title[0].plain_text,
-    tags: getTags(post.properties.Tags.multi_select),
-    description: post.properties.Description.rich_text[0].plain_text,
+    tags: getTags(post.properties.Tags.multi_select) ?? "NA",
+    description: post.properties.Description.rich_text[0].plain_text ?? "NA",
     date: getToday(post.properties.Date.created_time),
-    slug: post.properties.Slug.rich_text[0].plain_text,
-    readTime:post.properties.ReadTime.rich_text[0].plain_text,
-    updatedDate:post.properties.UpdatedDate.rich_text[0].plain_text,
-  };
- } 
+    slug: post.properties.Slug.rich_text[0].plain_text ?? "NA",
+    // words: page.properties['Words'].rich_text[0].plain_text,
+    words: post.properties && post.properties.Words && post.properties.Words.rich_text
+      ? post.properties.Words.rich_text[0].plain_text
+      : "NA",
+    readTime: post.properties && post.properties.ReadTime && post.properties.ReadTime.formula ? post.properties.ReadTime.formula.number : "",
+    phase: post.properties && post.properties.Phase && post.properties.Phase.status
+      ? post.properties.Phase.status.name
+      : "",
+    phaseColor: post.properties && post.properties.Phase && post.properties.Phase.status
+      ? post.properties.Phase.status.color
+      : "",
 
-  function getToday (datestring) {
+
+    updatedDate: post.properties && post.properties.updatedDate && post.properties.updatedDate.date ? post.properties.updatedDate.date.start : ""
+  };
+}
+
+function getToday(datestring) {
   const months = [
     "January",
     "February",
@@ -90,8 +104,8 @@ export const getSingleBlogPostBySlug = async (slug) => {
   const mdblocks = await n2m.pageToMarkdown(page.id);
   const mdString = n2m.toMarkdownString(mdblocks);
   return {
-      metadata,
-      markdown: mdString,
+    metadata,
+    markdown: mdString,
   };
 }
 
