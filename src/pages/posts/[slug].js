@@ -53,13 +53,15 @@ const Post = ({ post }) => {
         <section className="flex flex-col justify-evenly space-y-6 shadow-lg rounded-lg p-12 dark:shadow-lime-100">
 
 
-          <div className="flex flex-row justify-evenly items-center p-4 border-2 rounded-md">
+          <div className="flex flex-row justify-between items-center py-4 px-12 border-2 rounded-md">
             {/* <p >Author: Praweg Koirala</p> */}
+            <a href="/" target="_blank"><p>Author: Praweg Koirala</p></a>
+            <p >🗓️  {post.metadata.date}</p>
+            <p>⌛️  {post.metadata.readTime} mins</p>
+            <div className={` px-2  rounded-md text-sm font-medium ${colorClasses[post.metadata.phaseColor]}`} > {post.metadata.phase} </div>
 
-            <p >Published: 🗓️ {post.metadata.date}</p>
-            <div className={`absolute px-2 py-1 m-2 rounded-md text-sm font-medium ${colorClasses[post.metadata.phaseColor]}`} > {post.metadata.phase} </div>
-            {/* <p>Phase: {post.metadata.phase}</p> */}
-            <p> 🏷️ &nbsp; &nbsp;{post.metadata.tags.join(' | ')}</p>
+
+            <p className="font-medium"> 🏷️ &nbsp; &nbsp;{post.metadata.tags.join(' | ')}</p>
           </div>
 
           <div className="flex flex-col mx-6 space-y-4" >
