@@ -17,15 +17,16 @@ const workSans = Work_Sans({
 })
 
 const poppins = Poppins({
+
     display: 'swap',
     subsets: ['latin'],
     variable: '--font-poppins',
-    weight: ['400', '500', '700'],
+    weight: ['100', '200', '300', '400', '500', '600', '700'],
 })
 
 const montserrat = Montserrat({
     subsets: ['latin'],
-    weight: ['100', '200', '400', '500',],
+    weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
     variable: '--font-montserrat',
 
 })

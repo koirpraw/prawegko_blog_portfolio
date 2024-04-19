@@ -1,15 +1,16 @@
 import { useState } from "react";
-import styles from "../styles/Home.module.css";
+
 import { getAllPublished, } from "@/lib/notion";
 import Head from "next/head";
 import { Card, CardHeader, CardContent, CardDescription, CardTitle, CardFooter } from "@/components/ui/card"
 
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
+import TransitionHeader from "@/components/transitionHeader";
 
 
 
-const PAGE_SIZE = 5; // max number of posts per page
+const blogCard_count = 8; // max number of posts per page
 
 // function SearchBar({ onSearch }) {
 //   const [query, setQuery] = useState("");
@@ -63,11 +64,11 @@ function BlogPage({ posts }) {
   const filteredPosts = posts.filter((post) => {
     post.title.toLowerCase().includes(searchQuery.toLowerCase)
   })
-  const startIndex = (currentPage - 1) * PAGE_SIZE;
-  const endIndex = startIndex + PAGE_SIZE;
+  const startIndex = (currentPage - 1) * blogCard_count;
+  const endIndex = startIndex + blogCard_count;
   const currentPosts = posts.slice(startIndex, endIndex);
 
-  const totalPages = Math.ceil(posts.length / PAGE_SIZE);
+  const totalPages = Math.ceil(posts.length / blogCard_count);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -77,6 +78,14 @@ function BlogPage({ posts }) {
     setSearchQuery(query);
     setCurrentPage(1);
   }
+
+  const colorClasses = {
+    red: 'bg-red-200',
+    yellow: 'bg-yellow-200',
+    green: 'bg-green-200',
+    // add more colors if needed
+  };
+
 
   if (!posts) return <h1>No posts</h1>
   return (
@@ -90,6 +99,7 @@ function BlogPage({ posts }) {
 
 
       <div className="flex flex-col justify-start items-center w-full space-y-10 px-12 lg:px-0  lg:mx-48 ">
+        <TransitionHeader title="Notes" />
         <div className="flex flex-col justify-center items-center lg:w-3/4 space-y-6">
           <div className="space-y-4 lg:mr-24">
             {/* <h3 className="text-xl">These are my little fruits of Knowledge in my evergrowing Knowledge tree</h3> */}
@@ -110,10 +120,13 @@ function BlogPage({ posts }) {
         {/* <SearchBar onSearch={handleSearch}/> */}
         <div className="grid lg:grid-cols-2 lg:w-3/4 ">
           {currentPosts.map((post, index) => (
-            <div className="mr-6 mb-6 " key={index}>
+            <div className="mr-6 mb-6 lg:p-4" key={index}>
               <Link href={`/posts/${post.slug}`} key={index} >
                 <Card className="hover:shadow-xl hover:scale-105">
+
+
                   <CardHeader>
+
 
                     <CardTitle>
                       {post.title}
@@ -126,9 +139,10 @@ function BlogPage({ posts }) {
                     </CardDescription>
                   </CardContent>
                   <CardFooter >
+                    {/* <div className="absolute bg-${post.phaseColor}-200  px-2 py-1 m-2 rounded-md text-sm font-medium" > {post.phase}</div> */}
+                    <div className={`absolute px-2 py-1 m-2 rounded-md text-sm font-medium ${colorClasses[post.phaseColor]}`} > {post.phase} </div>
 
 
-                    Read More..
 
 
                   </CardFooter>

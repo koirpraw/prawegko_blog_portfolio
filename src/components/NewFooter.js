@@ -2,12 +2,12 @@ import React from "react";
 import FooterNavLinks from "./footerNavLinks";
 
 function NewFooter() {
-    const today = new Date();
-    const year = today.getFullYear().toString();
-    const shortYear = year.substring(2);
+    let today = new Date();
+    let day = today.getUTCDate();
+    let month = today.getUTCMonth() + 1;
+    let year = today.getUTCFullYear().toString().slice(2);
 
-
-    const todayDate = `0${today.getDay()}.0${today.getMonth()}.${shortYear}`;
+    let todayDate = `${day}/${month}/${year}`;
 
 
 
@@ -23,7 +23,9 @@ function NewFooter() {
                         </a>
                     </p>
                     <div className="flex flex-col justify-center items-center space-x-4">
-                        <p className="text-5xl font-signature">Prawegko</p><p className="text-gray-400">{todayDate}</p>
+                        <p className="text-5xl font-signature">Prawegko</p>
+                        <p className="text-gray-400">{todayDate}</p>
+                        {/* <GeneralUtils /> */}
 
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 
 
 import React from 'react'
+import TransitionHeader from '@/components/transitionHeader';
 
 function AboutPage() {
     var currentYear = new Date().getFullYear();
@@ -9,6 +10,7 @@ function AboutPage() {
     var usDuration = currentYear - 2006;
     return (
         <div className='flex flex-col justify-center items-center space-y-8 w-full px-6'>
+            <TransitionHeader title="About" />
             <div className='flex justify-center lg:w-3/4'>
                 <h3 className="text-3xl font-light ">Welcome to My Digital WorkShop. I am so Glad to Virtually meet you.</h3>
             </div>

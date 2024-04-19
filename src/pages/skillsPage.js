@@ -1,5 +1,6 @@
 
 import Head from "next/head";
+import TransitionHeader from "@/components/transitionHeader";
 
 import {
   SiReact, SiFlutter, SiNodedotjs,
@@ -48,6 +49,7 @@ function SkillsPage() {
 
 
       <main className="flex flex-col justify-center items-center min-h-screen space-y-12 py-12 w-full">
+        <TransitionHeader title="Skills" />
 
         <div className="flex flex-col justify-center items-center px-4 space-y-3">
           <h3 className="text-3xl"> My Tech Stack</h3>
