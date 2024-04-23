@@ -1,7 +1,7 @@
 import React from "react";
 // import { Card, Text, Grid, Link } from "@nextui-org/react";
 import { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from './ui/card';
-import { Badge } from "@nextui-org/react";
+
 import Link from 'next/link';
 import { Code, ListCollapse } from 'lucide-react';
 

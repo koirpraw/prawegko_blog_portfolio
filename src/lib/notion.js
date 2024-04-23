@@ -54,7 +54,7 @@ const getPageMetaData = (post) => {
       : "",
 
 
-    updatedDate: post.properties && post.properties.updatedDate && post.properties.updatedDate.date ? post.properties.updatedDate.date.start : ""
+    updatedDate: post.properties && post.properties.updatedDate && post.properties.updatedDate.date ? getToday(post.properties.updatedDate.date.start) : ""
   };
 }
 

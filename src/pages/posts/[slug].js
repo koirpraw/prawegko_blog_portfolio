@@ -23,12 +23,16 @@ const CodeBlock = ({ language, codestring }) => {
 const Post = ({ post }) => {
 
 
+
   const colorClasses = {
     red: 'bg-red-200',
     yellow: 'bg-yellow-200',
     green: 'bg-green-200',
     // add more colors if needed
   };
+
+
+
   return (
     <>
 
@@ -46,14 +50,14 @@ const Post = ({ post }) => {
 
 
 
-      <main className="flex flex-col justify-center items-center space-y-6 min-h-screen lg:mx-48 mx-6 ">
+      <div className="flex flex-col justify-center items-center space-y-6 min-h-screen lg:mx-48 mx-6 ">
 
         <h2 className="text-2xl font-bold my-12">{post.metadata.title}</h2>
 
-        <section className="flex flex-col justify-evenly space-y-6 shadow-lg rounded-lg p-12 dark:shadow-lime-100">
+        <div className="flex flex-col justify-evenly space-y-6 shadow-lg rounded-lg p-12 dark:shadow-lime-100">
 
 
-          <div className="flex flex-row justify-between items-center py-4 px-12 border-2 rounded-md">
+          <div className="flex flex-row justify-between items-center py-4 lg:px-12 px-4 border-2 rounded-md">
             {/* <p >Author: Praweg Koirala</p> */}
             <a href="/" target="_blank"><p>Author: Praweg Koirala</p></a>
             <p >🗓️  {post.metadata.date}</p>
@@ -64,8 +68,9 @@ const Post = ({ post }) => {
             <p className="font-medium"> 🏷️ &nbsp; &nbsp;{post.metadata.tags.join(' | ')}</p>
           </div>
 
-          <div className="flex flex-col mx-6 space-y-4" >
+          <div className="flex flex-col justify-center items-center mx-6  space-y-4" >
             <ReactMarkdown
+
               components={{
                 code({ node, inline, className, children, ...props }) {
                   const match = /language-(\w+)/.exec(className || '')
@@ -102,19 +107,12 @@ const Post = ({ post }) => {
                 col({ node, children, ...props }) {
                   return
                 }
-
-                // ul({ node, children, ...props }) {
-                //   return <div className="text-lg" {...props}>{children}</div>
-                // },
-                // li({ node, children, ...props }) {
-                //   return <div className="text-lg" {...props}>{children}</div>
-                // }
-
-              }} >{post.markdown}</ReactMarkdown>
+              }}
+            >{post.markdown}</ReactMarkdown>
 
             <div className="flex justify-center text-gray-400 space-x-2">
               <p>This post was last updated on:  {post.metadata.updatedDate === "" ? post.metadata.date : post.metadata.updatedDate}</p>
-
+              {/* <p>This post was last updated on:  {updatedDate}</p> */}
 
 
             </div>
@@ -125,12 +123,12 @@ const Post = ({ post }) => {
           </div>
 
 
-        </section>
+        </div>
         <Button asChild>
           <Link href="/blogPage">Back</Link>
         </Button>
 
-      </main>
+      </div>
     </>
 
   );
