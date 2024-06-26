@@ -13,7 +13,6 @@ function Project({ title, description, image, githubLink, projectLink, techStack
 
         <img
           width="full"
-          src={image}
 
         />
         {/* </div> */}
