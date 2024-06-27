@@ -75,8 +75,29 @@ const Post = ({ post }) => {
                 // code({ node, children, ...props }) {
                 //   return <p className=" font-mono bg-red-200" {...props}>{children}</p>
                 // },
+                ol({ node, children, ...props }) {
+                  return <div className="m-0 list-decimal"{...props}>{children}</div>
+                },
+                li({ node, children, ...props }) {
+                  return <div className="m-0 list-disc"{...props}>{children}</div>
+                },
+                h1({ node, children, ...props }) {
+                  return <div className="text-3xl font-medium"{...props}>{children}</div>
+                },
+                h2({ node, children, ...props }) {
+                  return <div className="text-2xl font-medium"{...props}>{children}</div>
+                },
+                h3({ node, children, ...props }) {
+                  return <div className="text-xl font-medium"{...props}>{children}</div>
+                },
+                table({ node, children, ...props }) {
+                  return <div{...props}>{children}</div>
+                },
+                pre({ node, children, ...props }) {
+                  return <div{...props}>{children}</div>
+                },
                 CodeBlock({ node, children, ...props }) {
-                  return <div className="whitespace-pre max-w-full overflow-x-auto bg-slate-500 p-4 rounded-xl" {...props}>{children}</div>
+                  return <div{...props}>{children}</div>
                 },
                 code({ node, inline, className, children, ...props }) {
 
@@ -87,6 +108,7 @@ const Post = ({ post }) => {
                     <CodeBlock
                       codestring={String(children).replace(/\n$/, '')}
                       language={match[1]}
+                      className="text-sm font-mono"
 
 
 
@@ -94,7 +116,7 @@ const Post = ({ post }) => {
                     />
                   ) : (
                     <code
-                      // className="text-green"
+                      className="text-green"
                       // dangerouslySetInnerHTML={{ __html: post.markdown }}
                       {...props}>
 
@@ -106,6 +128,7 @@ const Post = ({ post }) => {
 
             // dangerouslySetInnerHTML={{ __html: post.markdown }}
             // children={post.markdown}
+            // className="prose"
             >
               {post.markdown}
             </ReactMarkdown>
